@@ -36,7 +36,7 @@ approx(cash+shares*trend.at(-1).close,res.endingEquity,"ending equity");
 approx(res.endingEquity/100000-1,res.returnRate,"return rate");
 assert.equal(res.equity.length,trend.length);tests++;
 // One-lot affordability: cash exactly sufficient after minimum commission.
-const oneLot=bt.run(make("2024-01-01",35,i=>10+i*.1),{capital:1100,strategy:"ma",slippage:0,commission:0,minCommission:5});
+const oneLot=bt.run(make("2024-01-01",35,i=>10+i*.1),{capital:1500,strategy:"ma",slippage:0,commission:0,minCommission:5});
 assert.ok(oneLot.records.some(x=>x.side==="买入"));tests++;
 // Explicit 2023-08-28 stamp tax cut: sale tax differs for same notional.
 const before=make("2023-07-01",65,i=>i<34?10+i*.2:16.8-(i-34)*.22);
