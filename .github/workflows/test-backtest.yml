@@ -4,6 +4,7 @@ on:
     paths:
       - "backtest.js"
       - "test_backtest.cjs"
+      - "test_accounting.cjs"
       - "index.html"
       - ".github/workflows/test-backtest.yml"
   workflow_dispatch:
@@ -18,3 +19,4 @@ jobs:
         with:
           node-version: "22"
       - run: node test_backtest.cjs
+      - run: node test_accounting.cjs
