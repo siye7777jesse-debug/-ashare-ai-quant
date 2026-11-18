@@ -1,0 +1,29 @@
+name: Refresh public A-share history
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 11 * * 1-5"
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Offline parser tests
+        run: python -m unittest -v test_update_data.py
+      - name: Fetch public daily bars
+        run: python update_data.py
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh A-share daily bars"
+            git push
+          fi
