@@ -1,0 +1,13 @@
+const assert=require("node:assert/strict"),fs=require("node:fs"),vm=require("node:vm");
+const html=fs.readFileSync("index.html","utf8");
+const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(x=>x[1]).filter(x=>x.trim());
+assert.ok(scripts.length>=1,"Missing inline UI script");
+for(const js of scripts)new vm.Script(js,{filename:"index-inline.js"});
+const ids=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]));
+assert.equal(ids.size,[...html.matchAll(/\bid="([^"]+)"/g)].length,"Duplicate DOM ids");
+const refs=[...scripts.join("\n").matchAll(/\$\('([^']+)'\)/g)].map(x=>x[1]);
+for(const id of refs)assert.ok(ids.has(id),"Missing UI id "+id);
+for(const name of ["backtest.js","validation.js","multistock.js"])assert.ok(html.includes('src="./'+name+'"'),"Missing required script "+name);
+for(const id of ["batch-cutoff","batch-run","batch-summary","batch-status","batch-rows"])assert.ok(ids.has(id));
+assert.ok(!html.includes('type="file"'),"CSV file input should not reappear");
+console.log("Mobile UI smoke: syntax, dependency tags and element references passed");
