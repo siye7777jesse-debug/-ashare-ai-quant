@@ -11,5 +11,5 @@ for(const name of ["backtest.js","validation.js","multistock.js","stocks.js","co
 for(const id of ["stock-search","stock-suggestions","directory-status","batch-search","batch-selected","batch-add-code","batch-cutoff","batch-run","batch-summary","batch-status","batch-rows","batch-return-chart","batch-split-chart","batch-drawdown-chart"])assert.ok(ids.has(id));
 assert.ok(!html.includes('type="file"'),"CSV file input should not reappear");
 assert.ok(!html.includes('name="batch-symbol"'),"Fixed six-stock checklist should be removed");
-assert.ok(html.includes("最多10只"),"Comparison capacity note missing");
+assert.ok(html.includes("最多选择10只"),"Comparison capacity note missing");
 console.log("Mobile UI smoke: syntax, dependency tags and element references passed");
