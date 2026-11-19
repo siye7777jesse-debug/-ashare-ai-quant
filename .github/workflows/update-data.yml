@@ -1,6 +1,11 @@
 name: Refresh public A-share history
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-data.yml"
+      - "update_data.py"
   schedule:
     - cron: "30 11 * * 1-5"
 permissions:
