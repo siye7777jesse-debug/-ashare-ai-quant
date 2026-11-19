@@ -27,5 +27,20 @@ function split(raw,opts={}){
    warning:"仅按时间划分固定策略；如果曾用全区间选择参数或多次查看样本外结果后调参，这不属于独立样本外验证。"
  };
 }
-root.AshareValidation={split};
+
+function splitAtDate(raw,cutoff,opts={}){
+ const core=root.AshareBacktest;
+ if(!core||typeof core.run!=="function")throw Error("Backtest core is unavailable");
+ if(typeof cutoff!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(cutoff)||!Number.isFinite(Date.parse(cutoff))||new Date(cutoff+"T00:00:00Z").toISOString().slice(0,10)!==cutoff)throw Error("无效的样本外开始日期");
+ const bars=core.normalize(raw);
+ const index=bars.findIndex(b=>b.date>=cutoff);
+ if(index<60||bars.length-index<30)throw Error("分界日期前需至少60条日线，之后至少30条日线");
+ const cfg={...opts};delete cfg.startIndex;delete cfg.trainRatio;
+ const inSample=core.run(bars.slice(0,index),cfg);
+ const outSample=core.run(bars,{...cfg,startIndex:index});
+ if(outSample.records.some(r=>r.date<cutoff))throw Error("样本外时间泄漏");
+ return {inSample,outSample,trainBars:index,testBars:bars.length-index,trainStart:bars[0].date,trainEnd:bars[index-1].date,testStart:bars[index].date,testEnd:bars.at(-1).date,cutoff};
+}
+
+root.AshareValidation={split,splitAtDate};
 })(typeof globalThis!=="undefined"?globalThis:this);
