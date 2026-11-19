@@ -11,7 +11,7 @@ SYMBOLS = ("600865", "600838", "000759", "300308", "601138", "600519")
 ENDPOINT = "https://push2his.eastmoney.com/api/qt/stock/kline/get"
 
 def fetch(symbol):
-    market = "1" if symbol[0] in "569" else "0"
+    market = "1" if symbol[0] in "56" else "0"
     params = urllib.parse.urlencode({
         "secid": f"{market}.{symbol}", "klt": "101", "fqt": "0",
         "beg": "20180101", "end": dt.date.today().strftime("%Y%m%d"),
