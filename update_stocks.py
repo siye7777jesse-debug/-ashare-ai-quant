@@ -73,8 +73,35 @@ def collect(fetcher=fetch_page, min_count=1000):
     }
 
 
+
+def collect_from_akshare():
+    """Use AKShare's exchange disclosures if Eastmoney's all-stock list is blocked."""
+    import akshare as ak
+    frame = ak.stock_info_a_code_name()
+    if not {"code", "name"}.issubset(set(frame.columns)):
+        raise ValueError("AKShare stock directory schema changed")
+    seen = {}
+    for row in frame[["code", "name"]].to_dict(orient="records"):
+        code = str(row["code"]).split(".")[0].strip().zfill(6)
+        name = str(row["name"]).strip()
+        if len(code) == 6 and code.isdigit() and name and name.lower() != "nan":
+            seen[code] = name
+    if len(seen) < 3500:
+        raise ValueError(f"AKShare exchange directory too small: {len(seen)}")
+    return {
+        "source": "AKShare / Shanghai, Shenzhen and Beijing exchange listings",
+        "scope": "currently-listed",
+        "fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "stocks": [{"code": code, "name": seen[code]} for code in sorted(seen)],
+    }
+
+
 def main():
-    payload = collect()
+    try:
+        payload = collect()
+    except Exception as primary_error:
+        print("Primary public symbol listing unavailable:", primary_error)
+        payload = collect_from_akshare()
     OUT.parent.mkdir(exist_ok=True)
     tmp = OUT.with_suffix(".tmp")
     tmp.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

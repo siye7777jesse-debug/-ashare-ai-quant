@@ -33,6 +33,26 @@ class TestDirectory(unittest.TestCase):
         with self.assertRaises(ValueError):
             s.parse_page({"data": {"diff": "oops", "total": 10}})
 
+    def test_exchange_fallback_normalizes_codes(self):
+        from unittest.mock import patch
+        import types
+        import sys
+
+        class FakeFrame:
+            columns = ["code", "name"]
+            def __getitem__(self, names): return self
+            def to_dict(self, orient):
+                self_as_rows = [{"code": i, "name": "示例股票" + str(i)}
+                                for i in range(3500)]
+                return self_as_rows
+
+        fake_module = types.SimpleNamespace(stock_info_a_code_name=lambda: FakeFrame())
+        with patch.dict(sys.modules, {"akshare": fake_module}):
+            data = s.collect_from_akshare()
+        self.assertEqual(len(data["stocks"]), 3500)
+        self.assertEqual(data["stocks"][0]["code"], "000000")
+        self.assertEqual(data["scope"], "currently-listed")
+
 
 if __name__ == "__main__":
     unittest.main()
