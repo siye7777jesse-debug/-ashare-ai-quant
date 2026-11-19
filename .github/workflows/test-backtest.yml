@@ -6,6 +6,8 @@ on:
       - "test_backtest.cjs"
       - "test_accounting.cjs"
       - "test_validation.cjs"
+      - "test_multistock.cjs"
+      - "multistock.js"
       - "validation.js"
       - "index.html"
       - ".github/workflows/test-backtest.yml"
@@ -23,3 +25,4 @@ jobs:
       - run: node test_backtest.cjs
       - run: node test_accounting.cjs
       - run: node test_validation.cjs
+      - run: node test_multistock.cjs
