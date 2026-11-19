@@ -8,7 +8,7 @@ records[8]={code:"600838",name:"上海九百"};
 records[9]={code:"000759",name:"中百集团"};
 records[10]={code:"300308",name:"中际旭创"};
 const rows=stocks.normalize({stocks:records},1000);
-assert.equal(rows.length,1250);
+assert.equal(rows.length,1249); // Duplicate code 000759 must be de-duplicated
 assert.equal(stocks.matches(rows,"上海九百")[0].code,"600838");
 assert.equal(stocks.matches(rows,"九百")[0].name,"上海九百");
 assert.equal(stocks.matches(rows,"300308")[0].name,"中际旭创");
