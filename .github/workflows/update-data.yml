@@ -24,6 +24,9 @@ jobs:
         run: python -m unittest -v test_update_data.py
       - name: Test public stock directory parser
         run: python -m unittest -v test_update_stocks.py
+      - name: Install optional exchange directory fallback
+        continue-on-error: true
+        run: python -m pip install --quiet akshare
       - name: Refresh public A-share name directory
         id: names
         continue-on-error: true
