@@ -4,6 +4,8 @@ on:
     paths:
       - "update_data.py"
       - "test_update_data.py"
+      - "update_stocks.py"
+      - "test_update_stocks.py"
       - ".github/workflows/**"
   workflow_dispatch:
 permissions:
@@ -17,3 +19,4 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m unittest -v test_update_data.py
+      - run: python -m unittest -v test_update_stocks.py
