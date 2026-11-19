@@ -5,7 +5,7 @@ const median=arr=>{if(!arr.length)return null;const a=[...arr].sort((x,y)=>x-y),
 function compare(items,opts={}){
  const validation=root.AshareValidation;
  if(!validation||typeof validation.splitAtDate!=="function")throw Error("Date validation unavailable");
- if(!Array.isArray(items)||items.length<1||items.length>30)throw Error("请选择1至30只股票");
+ if(!Array.isArray(items)||items.length<1||items.length>10)throw Error("一次最多比较10只股票");
  if(typeof opts.cutoff!=="string")throw Error("必须选择统一的样本外开始日期");
  const seen=new Set(),results=[];
  for(const item of items){

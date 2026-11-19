@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/update-data.yml"
       - "update_data.py"
+      - "update_stocks.py"
   schedule:
     - cron: "30 11 * * 1-5"
 permissions:
@@ -21,8 +22,21 @@ jobs:
           python-version: "3.11"
       - name: Offline parser tests
         run: python -m unittest -v test_update_data.py
+      - name: Test public stock directory parser
+        run: python -m unittest -v test_update_stocks.py
+      - name: Refresh public A-share name directory
+        id: names
+        continue-on-error: true
+        run: python update_stocks.py
       - name: Fetch public daily bars
+        id: prices
+        continue-on-error: true
         run: python update_data.py
+      - name: Confirm public data was fetched
+        if: steps.names.outcome == 'failure' && steps.prices.outcome == 'failure'
+        run: |
+          echo "Both public APIs failed; existing data has not been replaced."
+          exit 1
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"

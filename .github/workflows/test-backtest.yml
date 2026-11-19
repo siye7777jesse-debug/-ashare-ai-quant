@@ -8,6 +8,9 @@ on:
       - "test_validation.cjs"
       - "test_multistock.cjs"
       - "test_web_ui.cjs"
+      - "test_stock_ui.cjs"
+      - "stocks.js"
+      - "compare_charts.js"
       - "multistock.js"
       - "validation.js"
       - "index.html"
@@ -28,3 +31,4 @@ jobs:
       - run: node test_validation.cjs
       - run: node test_multistock.cjs
       - run: node test_web_ui.cjs
+      - run: node test_stock_ui.cjs
