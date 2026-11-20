@@ -58,7 +58,7 @@ async function load(){
    const json=await response.json();
    return {stocks:normalize(json,3500),scope:json.scope,source:json.source||"网站公开目录",updated:json.fetched_at||""};
   }catch(localError){
-   try{return {stocks:await fetchPublic(),scope:"currently-listed",source:"东方财富公开实时股票列表",updated:""}}
+   try{return {stocks:await fetchPublic(),scope:"quote-search-index",source:"东方财富公开实时股票列表",updated:""}}
    catch(remoteError){throw Error("股票名称目录暂不可用（"+localError.message+"；"+remoteError.message+"）。仍可输入6位股票代码。")}
   }
  })().catch(err=>{loading=null;throw err});

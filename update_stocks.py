@@ -62,7 +62,7 @@ def collect(fetcher=fetch_page, min_count=3500):
                 raise ValueError(f"Duplicate stock on page {page}")
             stocks[row["code"]] = row
         if len(stocks) == total:
-            return directory(stocks.values(), "Eastmoney public A-share listing", "currently-listed")
+            return directory(stocks.values(), "东方财富 A股行情检索目录", "quote-search-index")
         if len(stocks) > total:
             break
         time.sleep(0.1)

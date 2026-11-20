@@ -23,7 +23,7 @@ class TestDirectory(unittest.TestCase):
         result = s.collect(fake, min_count=2)
         self.assertEqual([r["code"] for r in result["stocks"]],
                          ["000759", "300308", "600838", "601138"])
-        self.assertEqual(result["scope"], "currently-listed")
+        self.assertEqual(result["scope"], "quote-search-index")
 
     def test_incomplete_list_rejected(self):
         with self.assertRaises(ValueError):
@@ -37,7 +37,7 @@ class TestDirectory(unittest.TestCase):
         import json
         d=json.loads(s.OUT.read_text())
         rows=d["stocks"]
-        self.assertIn(d["scope"],("currently-listed","disclosure-index"))
+        self.assertIn(d["scope"],("quote-search-index","disclosure-index"))
         self.assertGreaterEqual(len(rows),3500)
         self.assertEqual(len(rows),len({r["code"] for r in rows}))
         self.assertTrue(all(s.entry(r["code"],r["name"]) for r in rows))
