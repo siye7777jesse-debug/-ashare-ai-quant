@@ -13,7 +13,7 @@ class DataTests(unittest.TestCase):
         self.lines = [f"2024-01-{n:02d},10,10.5,11,9.5,1000" for n in range(1,27)]
 
     def fetch(self, code="600865"):
-        payload = dict(data=dict(code=code, klines=self.lines))
+        payload = dict(data=dict(code=code, market=int(code.startswith("6")), klines=self.lines))
         with patch.object(d, "request", return_value=payload) as request:
             data = d.fetch(code, "2024-01-31")
             self.assertEqual(request.call_args.args[1]["secid"], ("1." if code.startswith("6") else "0.") + code)

@@ -1,3 +1,4 @@
+"""Exercise all mobile research entry points using only the checked-in snapshot."""
 import functools
 import os
 import threading
@@ -16,6 +17,7 @@ with sync_playwright() as p:
  page.route('https://**/*',lambda route:route.abort())
  page.goto(f'http://127.0.0.1:{server.server_port}/')
  page.wait_for_function("document.getElementById('directory-status').textContent.includes('已载入')")
+ page.wait_for_function("!document.getElementById('report-symbol').disabled")
  page.locator('#stock-search').fill('茅台')
  page.locator('#stock-suggestions button').filter(has_text='600519').click()
  page.locator('#load').click()
@@ -31,7 +33,7 @@ with sync_playwright() as p:
  page.locator('#report-symbol').select_option('300308')
  assert page.locator('#report-rows tr').count()==8
  assert '年内截至' in page.locator('#report-rows tr').first.inner_text()
- assert page.evaluate("document.documentElement.scrollWidth<=innerWidth")
+ assert page.evaluate("document.documentElement.scrollWidth<=390")
  assert not errors,errors
  print('390x844 mobile Chromium; external requests blocked:',page.locator('#directory-status').inner_text(),page.locator('#count').inner_text(),'bars;',page.locator('#batch-summary').inner_text().split('；')[0],'; 8 yearly windows; no overflow or page errors')
  browser.close()

@@ -68,9 +68,12 @@ def fetch(symbol, end=None):
     payload = request(ENDPOINT, dict(secid=f"{market}.{symbol}", klt="101", fqt="0",
                       beg=START.replace("-", ""), end=end.replace("-", ""),
                       fields1="f1,f2,f3,f4,f5,f6", fields2="f51,f52,f53,f54,f55,f56"))
+    data = payload.get("data") or {}
+    if data.get("market") != int(market):
+        raise ValueError("Wrong exchange in history response")
     return dict(symbol=symbol, source="Eastmoney public daily K-line", adjustment="none",
                 fetched_at=dt.datetime.now(dt.timezone.utc).isoformat(),
-                bars=parse_bars(payload.get("data") or {}, symbol, end))
+                bars=parse_bars(data, symbol, end))
 
 
 def parse_actions(payload, symbol, begin, end):
@@ -173,7 +176,9 @@ def refresh(symbol, end, session=None):
     if any(x["date"] not in dates for x in actions["events"]):
         raise ValueError("Ex-date missing from daily history")
     # Keep the original market-data vintage when the bars are identical.
-    if old.get("bars") != dataset["bars"]:
+    old_time = old.get("fetched_at")
+    checked = closed_through(dt.datetime.fromisoformat(old_time)) if old_time else ""
+    if old.get("bars") != dataset["bars"] or checked < end:
         write_json(path, dataset)
     write_json(OUT / "actions" / path.name, actions)
     print(f"{symbol}: {len(dates)} bars to {max(dates)}, {len(actions['events'])} disclosures", flush=True)

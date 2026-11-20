@@ -24,7 +24,7 @@ function numeric(field) {
   return Number(field);
 }
 function publicBars(data, code) {
-  if (data?.code !== code || !Array.isArray(data.klines)) throw Error("行情代码或格式错误");
+  if (data?.code !== code || data.market !== (code.startsWith("6")?1:0) || !Array.isArray(data.klines)) throw Error("行情代码或格式错误");
   return data.klines.map(line => {
     const fields = line.split(",");
     if (fields.length !== 6) throw Error("日线字段数错误");
@@ -50,7 +50,7 @@ function publicEvents(payload, code, begin, end) {
   return events;
 }
 async function load(code, begin, requestedEnd) {
-  if (!/^\d{6}$/.test(code) || !validDate(begin) || !validDate(requestedEnd)) throw Error("请输入六位代码和有效日期");
+  if (!root.AshareStocks.isStockCode(code) || !validDate(begin) || !validDate(requestedEnd)) throw Error("请输入支持的A股代码和有效日期");
   const end = [requestedEnd,lastClosedDate()].sort()[0];
   if (begin > end) throw Error("日期区间内没有已收盘日线");
   const history = await withFallback(async()=>{

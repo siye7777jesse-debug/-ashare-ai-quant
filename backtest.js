@@ -152,7 +152,7 @@ function run(raw, opts={}) {
     signals.push({close: b.close * scale, high: b.high * scale});
   }
   const last = equity.at(-1);
-  const years = (Date.parse(bars.at(-1).date) - Date.parse(bars[start-1].date)) / 86400000 / 365.25;
+  const years = (Date.parse(bars.at(-1).date) - Date.parse(bars[start].date)) / 86400000 / 365.25;
   const daily = equity.slice(1).map((v, i) => v / equity[i] - 1);
   const mean = daily.reduce((a, b) => a + b, 0) / daily.length;
   const variance = daily.reduce((a, b) => a + (b - mean)**2, 0) / (daily.length - 1);
@@ -160,7 +160,7 @@ function run(raw, opts={}) {
     maxDrawdown: maxdd, annualized: last === 0 ? -1 : (last/capital)**(1/years)-1,
     sharpe: variance > 0 ? mean/Math.sqrt(variance)*Math.sqrt(252) : null, records, equity, stats,
     fees: account.fees, dividends: account.dividends, endingCash: account.cash, endingShares: account.shares,
-    endingEquity: last, firstTradeDate: bars[start].date, baselineDate: bars[start-1].date,
+    endingEquity: last, firstTradeDate: bars[start].date, baselineDate: bars[start].date,
     evaluationBars: bars.length-start,
     assumptions: "未复权开盘价成交，滑点计入成本；普通板块限价近似，开盘触限按无法排队成交处理。现金分配税前单列、不复投；未覆盖历史ST、特殊限价及配股。"};
 }

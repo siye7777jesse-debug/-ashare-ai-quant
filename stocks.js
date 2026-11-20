@@ -2,6 +2,7 @@
 (function(root){
 "use strict";
 const MARKETS="m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23,m:0+t:81+s:2048";
+function isStockCode(code){return /^\d{6}$/.test(code) && /^(00|30|60|688|43|83|87|88|92)/.test(code)}
 function normalize(input,min=1){
  const rows=Array.isArray(input)?input:input&&input.stocks;
  if(!Array.isArray(rows))throw Error("股票目录格式错误");
@@ -44,7 +45,7 @@ async function fetchPublic(){
    if(seen.has(item.code))throw Error("目录分页重复");
    seen.set(item.code,item);
   }
-  if(seen.size===expected)return [...seen.values()];
+  if(seen.size===expected)return normalize([...seen.values()].filter(x=>isStockCode(x.code)),3500);
   if(seen.size>expected)break;
  }
  throw Error("公开目录数量与返回总数不符");
@@ -64,5 +65,5 @@ async function load(){
  })().catch(err=>{loading=null;throw err});
  return loading;
 }
-root.AshareStocks={normalize,matches,fetchPublic,load};
+root.AshareStocks={isStockCode,normalize,matches,fetchPublic,load};
 })(typeof globalThis!=="undefined"?globalThis:this);

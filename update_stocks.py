@@ -10,6 +10,7 @@ import urllib.request
 ENDPOINT = "https://push2.eastmoney.com/api/qt/clist/get"
 CNINFO = "https://www.cninfo.com.cn/new/data/szse_stock.json"
 MARKETS = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23,m:0+t:81+s:2048"
+A_SHARE_CODE = re.compile(r"(?:00|30|60|688|43|83|87|88|92)[0-9]+")
 OUT = Path(__file__).resolve().parent / "data" / "stocks.json"
 
 
@@ -62,7 +63,12 @@ def collect(fetcher=fetch_page, min_count=3500):
                 raise ValueError(f"Duplicate stock on page {page}")
             stocks[row["code"]] = row
         if len(stocks) == total:
-            return directory(stocks.values(), "东方财富 A股行情检索目录", "quote-search-index")
+            # The mixed upstream feed also contains 810 convertible bonds and 689 CDRs.
+            shares = [v for k, v in stocks.items() if A_SHARE_CODE.fullmatch(k)]
+            if len(shares) < min_count:
+                raise ValueError("A-share name directory too small after instrument filtering")
+            return {**directory(shares, "东方财富 A股行情检索目录", "quote-search-index"),
+                    "provider_count": total}
         if len(stocks) > total:
             break
         time.sleep(0.1)

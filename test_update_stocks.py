@@ -42,6 +42,9 @@ class TestDirectory(unittest.TestCase):
         self.assertEqual(len(rows),len({r["code"] for r in rows}))
         self.assertTrue(all(s.entry(r["code"],r["name"]) for r in rows))
         self.assertIn("600519",{r["code"] for r in rows})
+        if d["scope"]=="quote-search-index":
+            self.assertGreaterEqual(d["provider_count"],len(rows))
+            self.assertTrue(all(s.A_SHARE_CODE.fullmatch(r["code"]) for r in rows))
 
     def test_inconsistent_total_rejected(self):
         with self.assertRaises(ValueError):
