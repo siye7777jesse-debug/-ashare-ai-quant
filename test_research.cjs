@@ -60,5 +60,7 @@ const d=require("./data/600519.json"), a=require("./data/actions/600519.json");
 const folds=evaluate(d,a);
 const altered={...d,bars:d.bars.map(b=>b.date>"2024-12-31"?{...b,open:b.open+10,close:b.close+10,high:b.high+10,low:b.low+10}:b)};
 assert.deepEqual(folds.filter(w=>w.year<=2024),evaluate(altered,a).filter(w=>w.year<=2024));
-assert.ok(folds.every((w,i)=>!w.error && (!i||folds[i-1].end<w.start)));
+assert.ok(folds.every((w,i)=>(w.testBars<30 ? Boolean(w.error) : !w.error) && (!i||folds[i-1].end<w.start)));
+const shortYear={...d,bars:d.bars.filter(b=>b.date<="2025-01-10")};
+assert.match(evaluate(shortYear,a).at(-1).error,/30条/);
 console.log("Corporate actions, comparable benchmark, board lots, opening limits and forward-window isolation passed");

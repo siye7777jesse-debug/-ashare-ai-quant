@@ -1,4 +1,6 @@
 """Exercise the mobile research entry points using only the checked-in snapshot."""
+import json
+from pathlib import Path
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
@@ -33,8 +35,12 @@ def exercise(page):
     page.locator("#batch-run").click()
     page.wait_for_function("document.getElementById('batch-summary').textContent.includes('成功 2/2')")
     page.locator("#report-symbol").select_option("300308")
-    assert page.locator("#report-rows tr").count() == 8
-    assert "年内截至" in page.locator("#report-rows tr").first.inner_text()
+    report = json.loads(Path("data/research.json").read_text())
+    expected = next(item["windows"] for item in report["stocks"] if item["symbol"] == "300308")
+    assert page.locator("#report-rows tr").count() == len(expected)
+    latest = page.locator("#report-rows tr").first.inner_text()
+    assert expected[-1]["end"] in latest
+    assert ("年内截至" in latest) == expected[-1]["partial"]
     width = page.evaluate("document.documentElement.scrollWidth")
     if width > 390:
         outside = page.evaluate("""[...document.querySelectorAll('body *')].filter(
