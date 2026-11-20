@@ -1,12 +1,6 @@
 name: Validate A-share data parser
 on:
   pull_request:
-    paths:
-      - "update_data.py"
-      - "test_update_data.py"
-      - "update_stocks.py"
-      - "test_update_stocks.py"
-      - ".github/workflows/**"
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,5 +12,4 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python -m unittest -v test_update_data.py
-      - run: python -m unittest -v test_update_stocks.py
+      - run: python -m unittest discover -v

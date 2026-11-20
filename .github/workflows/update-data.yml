@@ -1,51 +1,50 @@
 name: Refresh public A-share history
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/update-data.yml"
-      - "update_data.py"
-      - "update_stocks.py"
   schedule:
     - cron: "30 11 * * 1-5"
 permissions:
   contents: write
+  pull-requests: write
+concurrency:
+  group: refresh-a-share-data
+  cancel-in-progress: false
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Offline parser tests
-        run: python -m unittest -v test_update_data.py
-      - name: Test public stock directory parser
-        run: python -m unittest -v test_update_stocks.py
-      - name: Install optional exchange directory fallback
-        continue-on-error: true
-        run: python -m pip install --quiet akshare
-      - name: Refresh public A-share name directory
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Fetch public directory
         id: names
-        continue-on-error: true
-        run: python update_stocks.py
-      - name: Fetch public daily bars
-        id: prices
-        continue-on-error: true
-        run: python update_data.py
-      - name: Confirm public data was fetched
-        if: steps.names.outcome == 'failure' && steps.prices.outcome == 'failure'
+        run: python -u update_stocks.py
+      - name: Fetch closed bars and distributions
+        if: success() || failure()
+        run: python -u update_data.py
+      - name: Compute and validate the complete candidate snapshot
         run: |
-          echo "Both public APIs failed; existing data has not been replaced."
-          exit 1
-      - name: Commit refreshed data
+          python -m unittest discover -v
+          node research_report.cjs
+          node --test test*.cjs
+          node research_report.cjs --check
+      - name: Submit verified data for review
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          git add data/
+          if git diff --cached --quiet; then exit 0; fi
+          branch="data/refresh-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          if ! git diff --cached --quiet; then
-            git commit -m "data: refresh A-share daily bars"
-            git push
-          fi
+          git commit -m "data: refresh verified quotes, distributions and research report"
+          git push origin "$branch"
+          gh pr create --head "$branch" --base main --title "更新公开行情、分配记录与预计算研究" --body "采集与离线测试均通过。请核对数据截止日期和名称目录口径后合并。"

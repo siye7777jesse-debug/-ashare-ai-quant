@@ -28,19 +28,26 @@ function matches(rows,query,max=15){
  return rows.map(x=>({x,s:score(x)})).filter(v=>v.s<99).sort((a,b)=>a.s-b.s||a.x.code.localeCompare(b.x.code)).slice(0,max).map(v=>v.x);
 }
 async function fetchPublic(){
- const rows=[],pz=1000;
- for(let pn=1;pn<=20;pn++){
+ const seen = new Map(), pz=100;
+ let expected;
+ for(let pn=1;pn<=150;pn++){
   const args=new URLSearchParams({pn:String(pn),pz:String(pz),po:"1",np:"1",fltt:"2",invt:"2",fid:"f12",fs:MARKETS,fields:"f12,f14"});
-  const response=await fetch("https://push2.eastmoney.com/api/qt/clist/get?"+args,{signal:AbortSignal.timeout(15000)});
+  const response=await fetch("https://push2.eastmoney.com/api/qt/clist/get?"+args,{signal:AbortSignal.timeout(10000)});
   if(!response.ok)throw Error("公开股票目录 HTTP "+response.status);
-  const json=await response.json(),data=json?.data,diff=data?.diff;
-  const page=Array.isArray(diff)?diff:Object.values(diff||{});
-  if(!page.length)throw Error("公开目录第"+pn+"页为空");
-  rows.push(...page.map(x=>({code:String(x.f12??""),name:String(x.f14??"")})));
-  if(pn===1){const total=Number(data.total);if(!Number.isFinite(total)||total<1000||total>15000)throw Error("公开目录返回的总数异常")}
-  if(rows.length>=Number(data.total))break;
+  const {data}=await response.json();
+  expected ??= Number(data?.total);
+  if(!Number.isInteger(expected)||expected<3500||expected>15000||expected!==Number(data?.total))throw Error("股票目录数量无效或已变化");
+  const page=Object.values(data.diff||{});
+  if(!page.length)throw Error("公开目录分页不完整");
+  for(const row of page){
+   const [item]=normalize([{code:row.f12,name:row.f14}]);
+   if(seen.has(item.code))throw Error("目录分页重复");
+   seen.set(item.code,item);
+  }
+  if(seen.size===expected)return [...seen.values()];
+  if(seen.size>expected)break;
  }
- return normalize(rows,1000);
+ throw Error("公开目录数量与返回总数不符");
 }
 let loading;
 async function load(){
@@ -49,9 +56,9 @@ async function load(){
    const response=await fetch("./data/stocks.json",{cache:"no-cache"});
    if(!response.ok)throw Error("网站股票目录暂未生成");
    const json=await response.json();
-   return {stocks:normalize(json,1000),source:json.source||"网站公开目录",updated:json.fetched_at||""};
+   return {stocks:normalize(json,3500),scope:json.scope,source:json.source||"网站公开目录",updated:json.fetched_at||""};
   }catch(localError){
-   try{return {stocks:await fetchPublic(),source:"东方财富公开实时股票列表",updated:""}}
+   try{return {stocks:await fetchPublic(),scope:"currently-listed",source:"东方财富公开实时股票列表",updated:""}}
    catch(remoteError){throw Error("股票名称目录暂不可用（"+localError.message+"；"+remoteError.message+"）。仍可输入6位股票代码。")}
   }
  })().catch(err=>{loading=null;throw err});

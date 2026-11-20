@@ -15,18 +15,21 @@ function compare(items,opts={}){
   seen.add(symbol);
   if(item.error){results.push({symbol,name,error:String(item.error)});continue}
   try{
-   const result=validation.splitAtDate(item.bars,opts.cutoff,{capital:opts.capital,commission:opts.commission,strategy:opts.strategy,symbol});
+   const result=validation.splitAtDate(item.bars,opts.cutoff,{...opts, actions:item.actions, symbol});
    results.push({symbol,name,...result});
   }catch(err){results.push({symbol,name,error:String(err.message||err)})}
  }
  const ok=results.filter(x=>!x.error),failed=results.length-ok.length;
+ const ends=new Set(ok.map(x=>x.testEnd));
+ const starts=new Set(ok.map(x=>x.testStart));
  return {cutoff:opts.cutoff,results,summary:{
+  sameObservedWindow:starts.size===1 && ends.size===1,
   selected:results.length,valid:ok.length,failed,
   positive:ok.filter(x=>x.outSample.returnRate>0).length,
   beatBenchmark:ok.filter(x=>x.outSample.returnRate>x.outSample.benchmark).length,
   medianOosReturn:median(ok.map(x=>x.outSample.returnRate)),
   medianOosDrawdown:median(ok.map(x=>x.outSample.maxDrawdown))
- },notes:"按同一日期分界，每股独立初始资金及空仓起步；汇总仅为横截面中位数，不是组合收益。失效或缺失股票不能视为零收益，未包含退市股票和完整历史股票池。"};
+ },notes:"按同一日期分界，每股独立初始资金及空仓起步；汇总仅为横截面中位数，不是组合收益。失效或缺失股票不能视为零收益，未包含退市股票和完整历史股票池。"+(starts.size>1||ends.size>1?" 各股实际首末交易日不同，横向指标覆盖区间有差异。":"")};
 }
 root.AshareMultiStock={compare};
 })(typeof globalThis!=="undefined"?globalThis:this);

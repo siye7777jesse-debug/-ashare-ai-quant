@@ -33,26 +33,28 @@ class TestDirectory(unittest.TestCase):
         with self.assertRaises(ValueError):
             s.parse_page({"data": {"diff": "oops", "total": 10}})
 
-    def test_exchange_fallback_normalizes_codes(self):
-        from unittest.mock import patch
-        import types
-        import sys
+    def test_committed_directory(self):
+        import json
+        d=json.loads(s.OUT.read_text())
+        rows=d["stocks"]
+        self.assertIn(d["scope"],("currently-listed","disclosure-index"))
+        self.assertGreaterEqual(len(rows),3500)
+        self.assertEqual(len(rows),len({r["code"] for r in rows}))
+        self.assertTrue(all(s.entry(r["code"],r["name"]) for r in rows))
+        self.assertIn("600519",{r["code"] for r in rows})
 
-        class FakeFrame:
-            columns = ["code", "name"]
-            def __getitem__(self, names): return self
-            def to_dict(self, orient):
-                self_as_rows = [{"code": i, "name": "示例股票" + str(i)}
-                                for i in range(3500)]
-                return self_as_rows
+    def test_inconsistent_total_rejected(self):
+        with self.assertRaises(ValueError):
+            s.collect(lambda p: ([{"code": str(p).zfill(6), "name":"样本"}], 3 if p==1 else 4), min_count=2)
 
-        fake_module = types.SimpleNamespace(stock_info_a_code_name=lambda: FakeFrame())
-        with patch.dict(sys.modules, {"akshare": fake_module}):
-            data = s.collect_from_akshare()
-        self.assertEqual(len(data["stocks"]), 3500)
-        self.assertEqual(data["stocks"][0]["code"], "000000")
-        self.assertEqual(data["scope"], "currently-listed")
-
+    def test_fallback_filters_asset_class_and_labels_scope(self):
+        rows=[{"category":"A股","code":str(i).zfill(6),"zwjc":"名称"+str(i)} for i in range(3500)]
+        rows += [dict(category="A股",code="600838",zwjc="上海九百"),dict(category="A股",code="920001",zwjc="样本"),
+                 dict(category="B股",code="900901",zwjc="B股")]
+        result=s.from_cninfo({"stockList":rows})
+        self.assertEqual(result["scope"],"disclosure-index")
+        self.assertEqual(len(result["stocks"]),3502)
+        with self.assertRaises(ValueError): s.from_cninfo({"stockList":rows+rows[:1]})
 
 if __name__ == "__main__":
     unittest.main()
