@@ -22,7 +22,7 @@ assert.equal(r.outSample.firstTradeDate,bars[112].date);
 assert.ok(r.outSample.records.every(t=>t.date>=r.testStart));checks++;
 const manual=core.run(bars,{...opts,startIndex:112});
 closeTo(r.outSample.returnRate,manual.returnRate,"manual holdout");
-closeTo(r.outSample.benchmark,bars.at(-1).close/bars[111].close-1,"benchmark baseline");
+closeTo(r.outSample.benchmark,manual.benchmark,"executable holdout benchmark");
 closeTo(r.outSample.endingCash,manual.endingCash,"holdout cash");
 assert.equal(r.outSample.records.length,manual.records.length);checks++;
 const changed=bars.map((x,i)=>i>=150?{...x,open:x.open+10,high:x.high+10,low:x.low+10,close:x.close+10}:x);
