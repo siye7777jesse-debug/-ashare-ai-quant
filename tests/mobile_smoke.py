@@ -34,6 +34,13 @@ def exercise(page):
         page.locator("#batch-suggestions button").first.click()
     page.locator("#batch-run").click()
     page.wait_for_function("document.getElementById('batch-summary').textContent.includes('成功 2/2')")
+    page.locator("#batch-search").fill("000001")
+    page.locator("#batch-add-code").click()
+    assert page.locator("#batch-summary").inner_text() == ""
+    page.locator("#batch-run").click()
+    page.wait_for_function("document.getElementById('batch-summary').textContent.includes('成功 2/3')")
+    assert "整组中位数暂缺" in page.locator("#batch-summary").inner_text()
+    assert "000001" in page.locator("#batch-rows").text_content()
     page.locator("#report-symbol").select_option("300308")
     report = json.loads(Path("data/research.json").read_text())
     expected = next(item["windows"] for item in report["stocks"] if item["symbol"] == "300308")

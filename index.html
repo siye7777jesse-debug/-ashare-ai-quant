@@ -87,6 +87,7 @@ const MAX_COMPARE=10,selectedStocks=[];
 const batchHistoryCache=new Map();
 let batchRunning=false,previousBatchResults=[];
 function updateBatchChips(){
+ clearBatchResult();
  const host=$('batch-selected');host.replaceChildren();
  for(const stock of selectedStocks){
   const button=document.createElement('button');button.type='button';
@@ -134,6 +135,17 @@ function renderComparisonCharts(){
  AshareCompareCharts.draw($('batch-split-chart'),previousBatchResults,'split');
  AshareCompareCharts.draw($('batch-drawdown-chart'),previousBatchResults,'drawdown');
 }
+function clearBatchResult(){
+ if(!$('batch-summary').textContent)return;
+ previousBatchResults=[];
+ $('batch-rows').replaceChildren();
+ $('batch-summary').textContent='';
+ $('batch-status').textContent='条件已改变，请重新运行对比。';
+ renderComparisonCharts();
+}
+for(const id of ['start','end','batch-cutoff','strategy','capital','fee']){
+ $(id).addEventListener('input',clearBatchResult);
+}
 window.addEventListener('resize',()=>{if(previousBatchResults.length)renderComparisonCharts()});
 updateBatchChips();renderComparisonCharts();
 $('batch-run').onclick=async()=>{
@@ -164,13 +176,23 @@ $('batch-run').onclick=async()=>{
   const row=(cells)=>{const tr=document.createElement('tr');cells.forEach(value=>{const td=document.createElement('td');td.textContent=String(value);tr.appendChild(td)});target.appendChild(tr)};
   for(const entry of report.results){
    if(entry.error){row([entry.name+' '+entry.symbol,'—','—','—','—','失败：'+entry.error]);continue}
-   row([entry.name+' '+entry.symbol,fmt(entry.inSample.returnRate),fmt(entry.outSample.returnRate),fmt(entry.outSample.maxDrawdown),fmt(entry.outSample.benchmark),entry.testStart+' 至 '+entry.testEnd+'；'+entry.outSample.records.length+'笔交易'])
+   row([entry.name+' '+entry.symbol,fmt(entry.inSample.returnRate),fmt(entry.outSample.returnRate),fmt(entry.outSample.maxDrawdown),fmt(entry.outSample.benchmark),entry.testStart+' 至 '+entry.testEnd+'（'+entry.testBars+' 个交易日）；'+entry.outSample.records.length+'笔交易'])
   }
   previousBatchResults=report.results;
   renderComparisonCharts();
   const info=report.summary;
-  $('batch-summary').textContent='成功 '+info.valid+'/'+info.selected+'；失败 '+info.failed+'；样本外盈利 '+info.positive+'只；跑赢买入持有 '+info.beatBenchmark+'只；样本外收益率中位数 '+(info.medianOosReturn===null?'—':fmt(info.medianOosReturn))+'（不是组合收益）';
-  $('batch-status').textContent=info.valid?'图表已生成。'+report.notes:'没有可用的股票回测数据。请展开详细数据查看逐只失败原因；请注意公开接口可能受限制。'
+  const counts='成功 '+info.valid+'/'+info.selected+'，缺少结果 '+info.failed+' 只。';
+  const parts=[counts];
+  if(info.valid){
+   parts.push('有效结果中，盈利 '+info.positive+'/'+info.valid+'，跑赢买入持有 '+info.beatBenchmark+'/'+info.valid+'，零成交 '+info.noTrades+' 只。');
+   parts.push('有效股票共出现 '+info.observedDays+' 个样本外交易日，其中各股都有行情的日期为 '+info.sharedDays+' 个。');
+   if(info.sharedDays)parts.push('共同日期首末为 '+info.sharedStart+' 至 '+info.sharedEnd+'。');
+  }
+  if(info.comparable)parts.push('整组样本外收益率中位数 '+fmt(info.medianOosReturn)+'。');
+  else parts.push('整组中位数暂缺。至少需要两只股票、全部成功且样本外交易日期一致。');
+  $('batch-summary').textContent=parts.join(' ');
+  $('batch-status').textContent=report.notes+(info.failed?' 展开明细可查看失败股票及原因。':'');
+
  }catch(err){$('batch-status').textContent='验证未完成：'+err.message;target.replaceChildren();$('batch-summary').textContent='';previousBatchResults=[];renderComparisonCharts()}
  finally{batchRunning=false;$('batch-run').disabled=false;$('batch-add-code').disabled=false}
 };
