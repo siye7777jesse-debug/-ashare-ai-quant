@@ -27,6 +27,19 @@ function matches(rows,query,max=15){
  };
  return rows.map(x=>({x,s:score(x)})).filter(v=>v.s<99).sort((a,b)=>a.s-b.s||a.x.code.localeCompare(b.x.code)).slice(0,max).map(v=>v.x);
 }
+function parseSelection(rows, input){
+ const query=String(input).normalize("NFKC").trim();
+ const key=value=>value.normalize("NFKC").toLowerCase();
+ const resolve=token=>{
+  if(/^\d{6}$/.test(token))return rows.find(stock=>stock.code===token)||{code:token,name:token};
+  const matches=rows.filter(stock=>key(stock.name)===key(token));
+  return matches.length===1?matches[0]:null;
+ };
+ if(!query)return [];
+ const whole=resolve(query);
+ if(whole)return [{token:query,stock:whole}];
+ return query.split(/[\s,、;；]+/).filter(Boolean).map(token=>({token,stock:resolve(token)}));
+}
 async function fetchPublic(){
  const rows=[],pz=1000;
  for(let pn=1;pn<=20;pn++){
@@ -57,5 +70,5 @@ async function load(){
  })().catch(err=>{loading=null;throw err});
  return loading;
 }
-root.AshareStocks={normalize,matches,fetchPublic,load};
+root.AshareStocks={normalize,matches,parseSelection,fetchPublic,load};
 })(typeof globalThis!=="undefined"?globalThis:this);

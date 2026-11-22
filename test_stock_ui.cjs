@@ -14,6 +14,15 @@ assert.equal(stocks.matches(rows,"九百")[0].name,"上海九百");
 assert.equal(stocks.matches(rows,"300308")[0].name,"中际旭创");
 assert.equal(stocks.matches(rows,"不存在").length,0);
 assert.throws(()=>stocks.normalize(records.slice(0,2),1000),/数量不足/);
+const directory=stocks.normalize(JSON.parse(fs.readFileSync("data/stocks.json","utf8")),3500);
+for(const query of ["云南锗业 中科曙光","云南锗业，603019","００２４２８、 中科曙光"]){
+ const results=stocks.parseSelection(directory,query);
+ assert.deepEqual(Array.from(results,entry=>entry.stock.code),["002428","603019"]);
+}
+const mixed=stocks.parseSelection(directory,"云南锗业; 查无此股");
+assert.equal(mixed[0].stock.name,"云南锗业");
+assert.equal(mixed[1].stock,null);
+assert.equal(stocks.parseSelection([],"002428 603019")[1].stock.code,"603019");
 const valid=[
  {name:"上海九百",symbol:"600838",inSample:{returnRate:.32},outSample:{returnRate:-.11,benchmark:.12,maxDrawdown:-.28}},
  {name:"中际旭创",symbol:"300308",inSample:{returnRate:-.12},outSample:{returnRate:.34,benchmark:.23,maxDrawdown:-.15}},

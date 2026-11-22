@@ -1,14 +1,14 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>A股双引擎研究平台</title><style>:root{font-family:system-ui,-apple-system,'PingFang SC',sans-serif;color:#e5edf8;background:#0b1220}*{box-sizing:border-box}body{margin:0}header{padding:22px 18px;background:#131f33}h1{font-size:23px;margin:0 0 7px}p{color:#a9b8cb;line-height:1.6}main{max-width:800px;margin:auto;padding:14px}.card{background:#17243a;border:1px solid #293951;border-radius:15px;padding:17px;margin-bottom:13px}h2{font-size:17px;margin:0 0 12px}label{display:block;color:#c4d1e0;font-size:13px;margin:10px 0 5px}input,select,button{font:inherit;border-radius:9px;padding:11px;width:100%;border:1px solid #3a506e;background:#0e192b;color:#e5edf8}button{background:#3569da;border:0;font-weight:700;margin-top:12px;cursor:pointer}.muted{font-size:12px;color:#91a3b9}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric{background:#0e192b;padding:12px;border-radius:10px}.metric b{display:block;font-size:20px;margin-top:5px}.good{color:#53cba2}.bad{color:#fa8585}canvas{width:100%;height:210px}.tag{display:inline-block;background:#263955;padding:5px 9px;border-radius:30px;font-size:12px}table{border-collapse:collapse;width:100%;font-size:12px}td,th{padding:9px 5px;border-bottom:1px solid #34435a;text-align:left}#message{white-space:pre-wrap}a{color:#9bbcff}.suggestions{display:grid;gap:4px;margin-top:4px;max-height:220px;overflow-y:auto}.suggestions button{text-align:left;font-weight:400;background:#21334f;margin:0;padding:11px;border:1px solid #34435a}.suggestions button:focus{outline:2px solid #80baff}.selected-stocks{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.selected-stocks button{width:auto;padding:8px 11px;background:#27415e;border:1px solid #405c7e;margin:0;font-size:12px}.search-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}.search-row button{width:auto;margin-top:0}.batch-results{overflow:auto}#batch-rows td{white-space:nowrap}#batch-status{white-space:pre-wrap}.compare-chart{width:100%;display:block;min-height:150px}.chart-wrap{margin:14px 0;padding:10px 7px;background:#0e192b;border:1px solid #34435a;border-radius:12px}.chart-wrap h3{font-size:13px;margin:4px 5px 8px}.batch-details summary{cursor:pointer;color:#9bbcff;padding:10px 0}#directory-status{min-height:20px}</style></head><body><header><h1>A股双引擎量化研究</h1><span class="tag">手机网页版 · 免费数据方案</span><p>引擎A：自动策略研究接口（待接入） · 引擎B：交易经验规则回测</p></header><main><section class="card"><h2>① 历史数据</h2><label for="stock-search">搜索A股股票名称或代码</label><input id="stock-search" value="贵州茅台 600519" autocomplete="off" placeholder="如：上海九百 / 600838"><input type="hidden" id="symbol" value="600519"><div id="stock-suggestions" class="suggestions"></div><p id="directory-status" class="muted">正在获取A股股票名称目录，也可直接输入六位代码。</p><div class="grid"><div><label>开始日期</label><input type="date" id="start" value="2023-01-01"></div><div><label>结束日期</label><input type="date" id="end" value="2026-11-18"></div></div><button id="load">自动获取公开历史数据</button><p id="message" class="muted">不需要CSV。优先读取网站自动更新的历史行情；如果尚未生成，则尝试公开行情接口。</p></section><section class="card"><h2>② 策略回测</h2><label>策略</label><select id="strategy"><option value="ma">趋势：5日/20日均线</option><option value="break">突破：20日新高</option><option value="revert">反转：5日跌幅超过8%后持有5天</option></select><div class="grid"><div><label>初始资金（元）</label><input id="capital" type="number" value="100000"></div><div><label>单边佣金率</label><input id="fee" type="number" step="0.0001" value="0.0003"></div></div><button id="run">运行回测</button><p class="muted">收盘信号次日开盘模拟；100股整数手；T+1；单边滑点0.1%、最低佣金5元、卖出印花税按历史日期分段；主板近似一字涨跌停限制。ST、完整停牌、公司行为及组合回测尚未实现。</p></section><section class="card"><h2>③ 回测结果</h2><div class="grid"><div class="metric">总收益率<b id="ret">—</b></div><div class="metric">同期买入持有<b id="benchmark">—</b></div><div class="metric">年化收益率<b id="annual">—</b></div><div class="metric">夏普比率（无风险利率按0）<b id="sharpe">—</b></div><div class="metric">最大回撤<b id="dd">—</b></div><div class="metric">交易次数<b id="trades">—</b></div><div class="metric">数据条数<b id="count">—</b></div></div><canvas id="chart" width="700" height="250"></canvas><p id="range" class="muted">请先加载真实数据并运行回测</p></section><section class="card"><h2>④ 样本外验证（固定70% / 30%）</h2><p class="muted">前70%交易日为样本内，后30%为样本外。策略和资金参数在两段保持相同；样本外可读取之前的价格计算指标，但此前不建仓。</p><button id="oos-run">运行样本内 / 样本外对比</button><p id="oos-range" class="muted">请先获取历史行情，再运行验证；建议至少100条日线。</p><div style="overflow-x:auto"><table><thead><tr><th>指标</th><th>样本内</th><th>样本外</th></tr></thead><tbody><tr><td>累计收益率</td><td id="in-ret">—</td><td id="out-ret">—</td></tr><tr><td>同期买入持有</td><td id="in-bench">—</td><td id="out-bench">—</td></tr><tr><td>最大回撤</td><td id="in-dd">—</td><td id="out-dd">—</td></tr><tr><td>年化收益率</td><td id="in-ann">—</td><td id="out-ann">—</td></tr><tr><td>夏普比率</td><td id="in-sharpe">—</td><td id="out-sharpe">—</td></tr><tr><td>交易次数</td><td id="in-trades">—</td><td id="out-trades">—</td></tr></tbody></table></div><p class="muted">这是时间切分回测，并非自动证明策略有效。如果你已看过后30%的表现并据此选过策略或调参，后30%不再是完全独立的样本外数据。</p></section><section class="card"><h2>⑤ 多股票图表对比</h2>
-<p class="muted">输入任意当前上市A股的名称或6位代码，最多选择10只。同一策略、同一分界日期；每只独立回测，不是组合收益。</p>
+<p class="muted">输入A股名称或6位代码，最多选择10只。同一策略、同一分界日期；每只独立回测，不是组合收益。</p>
 <label for="batch-search">添加要比较的股票</label>
-<div class="search-row"><input id="batch-search" placeholder="输入股票名称或6位代码" autocomplete="off"><button id="batch-add-code" type="button">添加</button></div>
+<div class="search-row"><input id="batch-search" placeholder="可输入多个名称或代码，用空格分隔" autocomplete="off"><button id="batch-add-code" type="button">添加</button></div>
 <div id="batch-suggestions" class="suggestions"></div>
 <div id="batch-selected" class="selected-stocks"></div>
-<p id="batch-count" class="muted">已选择 0 / 10 只。可搜索全市场当前上市A股，历史退市股票暂不在名称目录中。</p>
+<p id="batch-count" class="muted">已选择 0 / 10 只。可按名称搜索，也可直接输入代码。</p>
 <label for="batch-cutoff">统一样本外起始日期</label><input type="date" id="batch-cutoff" value="2025-01-01">
 <p class="muted">沿用第①部分的开始与结束日期、第②部分的策略、资金和手续费设置；要求每股分界前至少60条、分界后至少30条真实日线。</p>
 <button id="batch-run">获取公开历史行情并生成对比图</button>
-<p id="batch-status" class="muted">选择至少2只股票后开始。公开接口可能限流，失败会逐只标明，绝不使用虚构行情。</p>
+<p id="batch-status" class="muted" role="status">选择至少2只股票后开始。公开接口可能限流，失败会逐只标明，绝不使用虚构行情。</p>
 <p id="batch-summary" class="muted"></p>
 <div class="chart-wrap"><h3>样本外策略收益率 vs 同期买入持有</h3><canvas id="batch-return-chart" class="compare-chart" role="img" aria-label="股票样本外策略收益和买入持有收益对比图"></canvas></div>
 <div class="chart-wrap"><h3>样本内 vs 样本外策略收益率</h3><canvas id="batch-split-chart" class="compare-chart" role="img" aria-label="股票样本内和样本外策略收益对比图"></canvas></div>
@@ -51,8 +51,9 @@ $('stock-search').addEventListener('keydown',event=>{
 });
 AshareStocks.load().then(({stocks,source,updated})=>{
  stockDirectory=stocks;
- $('directory-status').textContent='已载入'+stocks.length+'只当前上市A股的名称目录；'+source+(updated?'，更新于'+updated.slice(0,10):'')+'。';
+ $('directory-status').textContent='已载入'+stocks.length+' 个名称及代码。目录包含部分历史代码。'+source+(updated?'，更新于'+updated.slice(0,10):'')+'。';
  renderSuggestions($('stock-search'),$('stock-suggestions'),chooseSingleStock);
+ updateBatchChips();
  renderBatchSuggestions();
 }).catch(err=>{
  $('directory-status').textContent=err.message;
@@ -110,32 +111,37 @@ function updateBatchChips(){
  $('batch-count').textContent='已选择 '+selectedStocks.length+' / '+MAX_COMPARE+' 只。'+
   (stockDirectory.length?'名称目录已载入，可继续输入名称搜索':'如果名称目录暂不可用，可以输入6位代码添加');
 }
-function addComparisonStock(stock){
+function addComparisonStocks(entries){
  if(batchRunning)return;
- const symbol=String(stock.symbol??stock.code??'');
- if(!/^\d{6}$/.test(symbol)){$('batch-status').textContent='请输入有效的六位股票代码';return}
- if(selectedStocks.some(x=>x.symbol===symbol)){$('batch-status').textContent='该股票已在对比列表中';return}
- if(selectedStocks.length>=MAX_COMPARE){$('batch-status').textContent='一次最多比较'+MAX_COMPARE+'只股票，请先移除其中一只';return}
- const found=knownStock(symbol);
- selectedStocks.push({symbol,name:found?.name||stock.name||symbol});
- $('batch-search').value='';$('batch-suggestions').replaceChildren();
- $('batch-status').textContent='已添加'+selectedStocks.length+'只，点击下方按钮开始对比';
- updateBatchChips()
+ const unresolved=[],overflow=[],duplicates=[];
+ let added=0;
+ for(const {token,stock} of entries){
+  if(!stock){unresolved.push(token);continue}
+  if(selectedStocks.some(item=>item.symbol===stock.code)){duplicates.push(stock.name);continue}
+  if(selectedStocks.length>=MAX_COMPARE){overflow.push(token);continue}
+  selectedStocks.push({symbol:stock.code,name:stock.name});
+  added++;
+ }
+ $('batch-search').value=[...unresolved,...overflow].join(' ');
+ $('batch-suggestions').replaceChildren();
+ if(added)updateBatchChips();
+ const status=[];
+ if(added)status.push('已添加 '+added+' 只。');
+ if(duplicates.length)status.push('已在对比列表：'+duplicates.join('、')+'。');
+ if(overflow.length)status.push('最多选择10只。暂未添加：'+overflow.join('、')+'。');
+ if(unresolved.length)status.push('请选择搜索结果或输入6位代码：'+unresolved.join('、')+'。');
+ $('batch-status').textContent=status.join(' ')||'请输入股票名称或6位代码。';
 }
 function renderBatchSuggestions(){
- renderSuggestions($('batch-search'),$('batch-suggestions'),addComparisonStock)
+ renderSuggestions($('batch-search'),$('batch-suggestions'),stock=>addComparisonStocks([{token:stock.name,stock}]))
 }
 $('batch-search').addEventListener('input',renderBatchSuggestions);
 $('batch-search').addEventListener('focus',renderBatchSuggestions);
 $('batch-search').addEventListener('keydown',event=>{
- if(event.key==='Enter'){event.preventDefault();addFromBatchQuery()}
+ if(event.key==='Enter'&&!event.isComposing){event.preventDefault();addFromBatchQuery()}
 });
 function addFromBatchQuery(){
- const q=$('batch-search').value.trim();
- if(/^\d{6}$/.test(q)){addComparisonStock({symbol:q,name:knownStock(q)?.name||q});return}
- const exact=stockDirectory.find(x=>x.name===q);
- if(exact){addComparisonStock(exact);return}
- $('batch-status').textContent='请在搜索结果中选择股票；如果名称目录不可用，可直接输入六位股票代码。'
+ addComparisonStocks(AshareStocks.parseSelection(stockDirectory,$('batch-search').value));
 }
 $('batch-add-code').onclick=addFromBatchQuery;
 function batchSignature(){
