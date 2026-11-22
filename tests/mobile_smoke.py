@@ -29,6 +29,17 @@ def exercise(page):
     page.locator("#oos-run").click()
     assert page.locator("#out-ret").inner_text() != "—"
 
+    page.locator("#batch-search").fill("云南锗业 中科曙光")
+    page.locator("#batch-add-code").click()
+    chips = page.locator("#batch-selected button")
+    assert chips.all_text_contents() == ["云南锗业 002428 ×", "中科曙光 603019 ×"]
+    page.locator("#batch-search").fill("云南锗业、查无此股")
+    page.locator("#batch-add-code").click()
+    assert chips.count() == 2
+    assert page.locator("#batch-search").input_value() == "查无此股"
+    for name in ("云南锗业", "中科曙光"):
+        chips.filter(has_text=name).click()
+
     for name in ["上海九百", "中际旭创"]:
         page.locator("#batch-search").fill(name)
         page.locator("#batch-suggestions button").first.click()
