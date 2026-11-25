@@ -22,6 +22,8 @@ def prepare(con, end, persistent=False):
     select d.date, d.code, c.seq,
            try_cast(d.open as double) as open,
            try_cast(d.close as double) as close,
+           try_cast(d.high as double) as high,
+           try_cast(d.low as double) as low,
            try_cast(d.preclose as double) as ref,
            try_cast(d.amount as double) as amount,
            d.isST, d.tradestatus, d.adjustflag,
@@ -40,7 +42,7 @@ def prepare(con, end, persistent=False):
       select *,
           (tradestatus='1' and amount>0 and open>0 and close>0 and ref>0
           and isST in ('0','1') and adjustflag='3') as traded,
-          case when isST='1' then .05 else .10 end as lim
+          case when isST='1' and date < '2026-07-06' then .05 else .10 end as lim
       from base
     ), px as (
       select *,
