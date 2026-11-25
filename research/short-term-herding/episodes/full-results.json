@@ -1,0 +1,6490 @@
+{
+  "episodes": [
+    {
+      "start": "2026-06-29",
+      "end": "2026-07-02",
+      "strict_days": 3,
+      "duration_open": false,
+      "broad_exit": "2026-07-06",
+      "broad_days": 5,
+      "ratio": 1.6963796560198336,
+      "ratio_max": 1.6963796560198336,
+      "height": 3,
+      "regime": "mixed",
+      "premium": 0.012520809686450536,
+      "breadth": 0.486646884272997,
+      "members": [
+        {
+          "code": "sz.002674",
+          "name": "兴业科技",
+          "r5": 0.6099542915,
+          "height": 0
+        },
+        {
+          "code": "sh.605366",
+          "name": "宏柏新材",
+          "r5": 0.4236252546,
+          "height": 0
+        },
+        {
+          "code": "sh.601133",
+          "name": "柏诚股份",
+          "r5": 0.4149865591,
+          "height": 2
+        },
+        {
+          "code": "sh.603650",
+          "name": "彤程新材",
+          "r5": 0.3650954309,
+          "height": 2
+        },
+        {
+          "code": "sh.603163",
+          "name": "圣晖集成",
+          "r5": 0.3534803521,
+          "height": 2
+        },
+        {
+          "code": "sz.002821",
+          "name": "凯莱英",
+          "r5": 0.3449033005,
+          "height": 1
+        },
+        {
+          "code": "sh.603061",
+          "name": "金海通",
+          "r5": 0.3436138905,
+          "height": 1
+        },
+        {
+          "code": "sz.000551",
+          "name": "创元科技",
+          "r5": 0.3115610712,
+          "height": 1
+        },
+        {
+          "code": "sh.605069",
+          "name": "正和生态",
+          "r5": 0.2947454844,
+          "height": 0
+        },
+        {
+          "code": "sh.603929",
+          "name": "亚翔集成",
+          "r5": 0.2923451245,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 115,
+          "date": "2026-06-29",
+          "retained": 10,
+          "height": 3
+        },
+        {
+          "seq": 116,
+          "date": "2026-06-30",
+          "retained": 8,
+          "height": 3
+        },
+        {
+          "seq": 117,
+          "date": "2026-07-01",
+          "retained": 4,
+          "height": 3
+        },
+        {
+          "seq": 118,
+          "date": "2026-07-02",
+          "retained": 2,
+          "height": 4
+        }
+      ],
+      "first_warning": "2026-07-01",
+      "follow_10": {
+        "status": {
+          "sold": 6,
+          "cash_or_liquidity": 4
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.03127083098477156,
+        "fills": 6,
+        "positive": 0.2
+      },
+      "follow_30": {
+        "status": {
+          "sold": 6,
+          "cash_or_liquidity": 4
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.03337386343147208,
+        "fills": 6,
+        "positive": 0.2
+      },
+      "follow_60": {
+        "status": {
+          "sold": 6,
+          "cash_or_liquidity": 4
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.036528412101522835,
+        "fills": 6,
+        "positive": 0.0
+      },
+      "pullback_signals": 4,
+      "pullback_10": {
+        "status": {
+          "cash_or_liquidity": 2,
+          "sold": 2
+        },
+        "signals": 4,
+        "resolved": 4,
+        "net": -0.034784299999999956,
+        "fills": 2,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-07-06",
+      "end": "2026-07-09",
+      "strict_days": 3,
+      "duration_open": false,
+      "broad_exit": "2026-07-10",
+      "broad_days": 4,
+      "ratio": 1.7377573008578244,
+      "ratio_max": 1.7377573008578244,
+      "height": 4,
+      "regime": "weak",
+      "premium": -0.009141099546726632,
+      "breadth": 0.4169134583744653,
+      "members": [
+        {
+          "code": "sz.002396",
+          "name": "星网锐捷",
+          "r5": 0.4767641997,
+          "height": 2
+        },
+        {
+          "code": "sh.600793",
+          "name": "宜宾纸业",
+          "r5": 0.463840399,
+          "height": 4
+        },
+        {
+          "code": "sz.000566",
+          "name": "海南海药",
+          "r5": 0.4162995595,
+          "height": 0
+        },
+        {
+          "code": "sz.002979",
+          "name": "雷赛智能",
+          "r5": 0.4074145217,
+          "height": 0
+        },
+        {
+          "code": "sz.002403",
+          "name": "爱仕达",
+          "r5": 0.3810082063,
+          "height": 1
+        },
+        {
+          "code": "sz.002747",
+          "name": "埃斯顿",
+          "r5": 0.3562168533,
+          "height": 0
+        },
+        {
+          "code": "sz.000520",
+          "name": "凤凰航运",
+          "r5": 0.2876712329,
+          "height": 0
+        },
+        {
+          "code": "sz.000938",
+          "name": "紫光股份",
+          "r5": 0.2694359756,
+          "height": 1
+        },
+        {
+          "code": "sz.002931",
+          "name": "锋龙股份",
+          "r5": 0.2693350343,
+          "height": 0
+        },
+        {
+          "code": "sz.002472",
+          "name": "双环传动",
+          "r5": 0.246161098,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 120,
+          "date": "2026-07-06",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 121,
+          "date": "2026-07-07",
+          "retained": 7,
+          "height": 5
+        },
+        {
+          "seq": 122,
+          "date": "2026-07-08",
+          "retained": 3,
+          "height": 6
+        },
+        {
+          "seq": 123,
+          "date": "2026-07-09",
+          "retained": 2,
+          "height": 7
+        }
+      ],
+      "first_warning": "2026-07-08",
+      "follow_10": {
+        "status": {
+          "sold": 10
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.0810770307277552,
+        "fills": 10,
+        "positive": 0.2
+      },
+      "follow_30": {
+        "status": {
+          "sold": 10
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.08446531302975269,
+        "fills": 10,
+        "positive": 0.2
+      },
+      "follow_60": {
+        "status": {
+          "sold": 10
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.08954773648274891,
+        "fills": 10,
+        "positive": 0.2
+      },
+      "pullback_signals": 5,
+      "pullback_10": {
+        "status": {
+          "sold": 5
+        },
+        "signals": 5,
+        "resolved": 5,
+        "net": -0.03848288000000002,
+        "fills": 5,
+        "positive": 0.2
+      }
+    },
+    {
+      "start": "2026-07-10",
+      "end": "2026-07-15",
+      "strict_days": 3,
+      "duration_open": false,
+      "broad_exit": "2026-07-16",
+      "broad_days": 4,
+      "ratio": 2.059150676536788,
+      "ratio_max": 2.059150676536788,
+      "height": 2,
+      "regime": "strong",
+      "premium": 0.003911209129103459,
+      "breadth": 0.7174843595653606,
+      "members": [
+        {
+          "code": "sz.002841",
+          "name": "视源股份",
+          "r5": 0.3680229525,
+          "height": 0
+        },
+        {
+          "code": "sz.000977",
+          "name": "浪潮信息",
+          "r5": 0.3492087415,
+          "height": 0
+        },
+        {
+          "code": "sz.001229",
+          "name": "魅视科技",
+          "r5": 0.3480725624,
+          "height": 0
+        },
+        {
+          "code": "sz.002185",
+          "name": "华天科技",
+          "r5": 0.2972834444,
+          "height": 0
+        },
+        {
+          "code": "sz.002828",
+          "name": "贝肯能源",
+          "r5": 0.2936660269,
+          "height": 1
+        },
+        {
+          "code": "sh.600246",
+          "name": "万通发展",
+          "r5": 0.2882238126,
+          "height": 0
+        },
+        {
+          "code": "sh.600288",
+          "name": "大恒科技",
+          "r5": 0.2871595331,
+          "height": 0
+        },
+        {
+          "code": "sh.603928",
+          "name": "兴业股份",
+          "r5": 0.2789115646,
+          "height": 0
+        },
+        {
+          "code": "sz.000892",
+          "name": "欢瑞世纪",
+          "r5": 0.2280701754,
+          "height": 2
+        },
+        {
+          "code": "sz.002815",
+          "name": "崇达技术",
+          "r5": 0.215870881,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 124,
+          "date": "2026-07-10",
+          "retained": 10,
+          "height": 2
+        },
+        {
+          "seq": 125,
+          "date": "2026-07-13",
+          "retained": 5,
+          "height": 3
+        },
+        {
+          "seq": 126,
+          "date": "2026-07-14",
+          "retained": 2,
+          "height": 3
+        },
+        {
+          "seq": 127,
+          "date": "2026-07-15",
+          "retained": 0,
+          "height": 4
+        }
+      ],
+      "first_warning": "2026-07-14",
+      "follow_10": {
+        "status": {
+          "sold": 8,
+          "delayed": 2
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.14558875499999996,
+        "fills": 10,
+        "positive": 0.0
+      },
+      "follow_30": {
+        "status": {
+          "sold": 8,
+          "delayed": 2
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.14877981499999998,
+        "fills": 10,
+        "positive": 0.0
+      },
+      "follow_60": {
+        "status": {
+          "sold": 8,
+          "delayed": 2
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.153566405,
+        "fills": 10,
+        "positive": 0.0
+      },
+      "pullback_signals": 6,
+      "pullback_10": {
+        "status": {
+          "sold": 6
+        },
+        "signals": 6,
+        "resolved": 6,
+        "net": -0.08014586666666662,
+        "fills": 6,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-07-16",
+      "end": "2026-07-22",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-07-23",
+      "broad_days": 5,
+      "ratio": 3.0007116794560527,
+      "ratio_max": 3.0007116794560527,
+      "height": 5,
+      "regime": "mixed",
+      "premium": 0.01608038190055738,
+      "breadth": 0.4695623560381704,
+      "members": [
+        {
+          "code": "sh.600664",
+          "name": "哈药股份",
+          "r5": 0.614379085,
+          "height": 5
+        },
+        {
+          "code": "sz.003001",
+          "name": "中岩大地",
+          "r5": 0.3761609907,
+          "height": 0
+        },
+        {
+          "code": "sh.603538",
+          "name": "美诺华",
+          "r5": 0.3662272889,
+          "height": 0
+        },
+        {
+          "code": "sh.603127",
+          "name": "昭衍新药",
+          "r5": 0.3553066938,
+          "height": 0
+        },
+        {
+          "code": "sz.002379",
+          "name": "宏桥控股",
+          "r5": 0.3102473498,
+          "height": 0
+        },
+        {
+          "code": "sz.002365",
+          "name": "永安药业",
+          "r5": 0.3075396825,
+          "height": 2
+        },
+        {
+          "code": "sh.600829",
+          "name": "人民同泰",
+          "r5": 0.3048933501,
+          "height": 0
+        },
+        {
+          "code": "sz.001388",
+          "name": "信通电子",
+          "r5": 0.2898052692,
+          "height": 0
+        },
+        {
+          "code": "sz.001395",
+          "name": "亚联机械",
+          "r5": 0.2458701498,
+          "height": 0
+        },
+        {
+          "code": "sz.002432",
+          "name": "九安医疗",
+          "r5": 0.2337217272,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 128,
+          "date": "2026-07-16",
+          "retained": 10,
+          "height": 5
+        },
+        {
+          "seq": 129,
+          "date": "2026-07-17",
+          "retained": 7,
+          "height": 4
+        },
+        {
+          "seq": 130,
+          "date": "2026-07-20",
+          "retained": 5,
+          "height": 3
+        },
+        {
+          "seq": 131,
+          "date": "2026-07-21",
+          "retained": 3,
+          "height": 4
+        },
+        {
+          "seq": 132,
+          "date": "2026-07-22",
+          "retained": 2,
+          "height": 5
+        }
+      ],
+      "first_warning": "2026-07-21",
+      "follow_10": {
+        "status": {
+          "sold": 8,
+          "entry_block": 2
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.033443254999999956,
+        "fills": 8,
+        "positive": 0.2
+      },
+      "follow_30": {
+        "status": {
+          "sold": 8,
+          "entry_block": 2
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.03611685499999996,
+        "fills": 8,
+        "positive": 0.2
+      },
+      "follow_60": {
+        "status": {
+          "sold": 8,
+          "entry_block": 2
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.04012725499999995,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "pullback_signals": 2,
+      "pullback_10": {
+        "status": {
+          "sold": 2
+        },
+        "signals": 2,
+        "resolved": 2,
+        "net": 0.021155624999999907,
+        "fills": 2,
+        "positive": 1.0
+      }
+    },
+    {
+      "start": "2026-07-23",
+      "end": "2026-07-29",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-07-30",
+      "broad_days": 5,
+      "ratio": 2.5242553372820042,
+      "ratio_max": 2.5242553372820042,
+      "height": 6,
+      "regime": "strong",
+      "premium": 0.04331498781998518,
+      "breadth": 0.8283459388359092,
+      "members": [
+        {
+          "code": "sz.001258",
+          "name": "立新能源",
+          "r5": 0.6103723404,
+          "height": 6
+        },
+        {
+          "code": "sh.600744",
+          "name": "华银电力",
+          "r5": 0.4538745387,
+          "height": 0
+        },
+        {
+          "code": "sh.600722",
+          "name": "金牛化工",
+          "r5": 0.4064516129,
+          "height": 2
+        },
+        {
+          "code": "sz.000815",
+          "name": "美利云",
+          "r5": 0.3720030936,
+          "height": 4
+        },
+        {
+          "code": "sh.600396",
+          "name": "华电辽能",
+          "r5": 0.3618257261,
+          "height": 2
+        },
+        {
+          "code": "sz.002197",
+          "name": "证通电子",
+          "r5": 0.3269896194,
+          "height": 3
+        },
+        {
+          "code": "sh.603619",
+          "name": "中曼石油",
+          "r5": 0.2783224401,
+          "height": 2
+        },
+        {
+          "code": "sh.600644",
+          "name": "乐山电力",
+          "r5": 0.2735042735,
+          "height": 0
+        },
+        {
+          "code": "sz.002879",
+          "name": "长缆科技",
+          "r5": 0.2691415313,
+          "height": 3
+        },
+        {
+          "code": "sh.600726",
+          "name": "华电能源",
+          "r5": 0.2576576577,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 133,
+          "date": "2026-07-23",
+          "retained": 10,
+          "height": 6
+        },
+        {
+          "seq": 134,
+          "date": "2026-07-24",
+          "retained": 9,
+          "height": 4
+        },
+        {
+          "seq": 135,
+          "date": "2026-07-27",
+          "retained": 5,
+          "height": 5
+        },
+        {
+          "seq": 136,
+          "date": "2026-07-28",
+          "retained": 3,
+          "height": 6
+        },
+        {
+          "seq": 137,
+          "date": "2026-07-29",
+          "retained": 1,
+          "height": 7
+        }
+      ],
+      "first_warning": "2026-07-28",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.06759014500000007,
+        "fills": 9,
+        "positive": 0.0
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.07076826500000005,
+        "fills": 9,
+        "positive": 0.0
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.07553544500000006,
+        "fills": 9,
+        "positive": 0.0
+      },
+      "pullback_signals": 5,
+      "pullback_10": {
+        "status": {
+          "sold": 5
+        },
+        "signals": 5,
+        "resolved": 5,
+        "net": 0.0026252999999999277,
+        "fills": 5,
+        "positive": 0.6
+      }
+    },
+    {
+      "start": "2026-07-31",
+      "end": "2026-08-06",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-08-07",
+      "broad_days": 5,
+      "ratio": 2.2265399118821816,
+      "ratio_max": 2.2265399118821816,
+      "height": 9,
+      "regime": "strong",
+      "premium": 0.027375903022398496,
+      "breadth": 0.7857377587906671,
+      "members": [
+        {
+          "code": "sz.003032",
+          "name": "传智教育",
+          "r5": 0.6106032907,
+          "height": 5
+        },
+        {
+          "code": "sh.603221",
+          "name": "爱丽家居",
+          "r5": 0.61,
+          "height": 9
+        },
+        {
+          "code": "sh.605068",
+          "name": "明新旭腾",
+          "r5": 0.5426742532,
+          "height": 0
+        },
+        {
+          "code": "sh.605179",
+          "name": "一鸣食品",
+          "r5": 0.49,
+          "height": 4
+        },
+        {
+          "code": "sz.002827",
+          "name": "高争民爆",
+          "r5": 0.4428690575,
+          "height": 3
+        },
+        {
+          "code": "sz.000428",
+          "name": "华天酒店",
+          "r5": 0.3848684211,
+          "height": 1
+        },
+        {
+          "code": "sh.600228",
+          "name": "返利科技",
+          "r5": 0.3602811951,
+          "height": 0
+        },
+        {
+          "code": "sh.605388",
+          "name": "均瑶健康",
+          "r5": 0.329764454,
+          "height": 0
+        },
+        {
+          "code": "sz.002882",
+          "name": "金龙羽",
+          "r5": 0.3278495887,
+          "height": 0
+        },
+        {
+          "code": "sh.603039",
+          "name": "泛微网络",
+          "r5": 0.3152899824,
+          "height": 2
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 139,
+          "date": "2026-07-31",
+          "retained": 10,
+          "height": 9
+        },
+        {
+          "seq": 140,
+          "date": "2026-08-03",
+          "retained": 9,
+          "height": 6
+        },
+        {
+          "seq": 141,
+          "date": "2026-08-04",
+          "retained": 8,
+          "height": 7
+        },
+        {
+          "seq": 142,
+          "date": "2026-08-05",
+          "retained": 4,
+          "height": 8
+        },
+        {
+          "seq": 143,
+          "date": "2026-08-06",
+          "retained": 3,
+          "height": 5
+        }
+      ],
+      "first_warning": "2026-08-05",
+      "follow_10": {
+        "status": {
+          "entry_block": 3,
+          "sold": 7
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.03214798000000008,
+        "fills": 7,
+        "positive": 0.4
+      },
+      "follow_30": {
+        "status": {
+          "entry_block": 3,
+          "sold": 7
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.02955054000000008,
+        "fills": 7,
+        "positive": 0.4
+      },
+      "follow_60": {
+        "status": {
+          "entry_block": 3,
+          "sold": 7
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.02565438000000008,
+        "fills": 7,
+        "positive": 0.4
+      },
+      "pullback_signals": 4,
+      "pullback_10": {
+        "status": {
+          "sold": 4
+        },
+        "signals": 4,
+        "resolved": 4,
+        "net": 0.006767624999999999,
+        "fills": 4,
+        "positive": 0.5
+      }
+    },
+    {
+      "start": "2026-08-07",
+      "end": "2026-08-14",
+      "strict_days": 5,
+      "duration_open": false,
+      "broad_exit": "2026-08-17",
+      "broad_days": 6,
+      "ratio": 1.3768550527883796,
+      "ratio_max": 1.3768550527883796,
+      "height": 4,
+      "regime": "mixed",
+      "premium": 0.007232363179797292,
+      "breadth": 0.4244415243101183,
+      "members": [
+        {
+          "code": "sz.002827",
+          "name": "高争民爆",
+          "r5": 0.5653179191,
+          "height": 2
+        },
+        {
+          "code": "sz.002792",
+          "name": "通宇通讯",
+          "r5": 0.5652356902,
+          "height": 2
+        },
+        {
+          "code": "sh.600721",
+          "name": "百花医药",
+          "r5": 0.4992887624,
+          "height": 4
+        },
+        {
+          "code": "sz.002428",
+          "name": "云南锗业",
+          "r5": 0.4948469007,
+          "height": 4
+        },
+        {
+          "code": "sh.600397",
+          "name": "江钨装备",
+          "r5": 0.4599524187,
+          "height": 0
+        },
+        {
+          "code": "sz.001267",
+          "name": "汇绿生态",
+          "r5": 0.4315895372,
+          "height": 4
+        },
+        {
+          "code": "sz.001331",
+          "name": "胜通能源",
+          "r5": 0.4252312436,
+          "height": 0
+        },
+        {
+          "code": "sz.000593",
+          "name": "德龙汇能",
+          "r5": 0.4113475177,
+          "height": 0
+        },
+        {
+          "code": "sh.603823",
+          "name": "百合花",
+          "r5": 0.4081196581,
+          "height": 0
+        },
+        {
+          "code": "sz.002913",
+          "name": "奥士康",
+          "r5": 0.4051724138,
+          "height": 1
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 144,
+          "date": "2026-08-07",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 145,
+          "date": "2026-08-10",
+          "retained": 9,
+          "height": 5
+        },
+        {
+          "seq": 146,
+          "date": "2026-08-11",
+          "retained": 6,
+          "height": 6
+        },
+        {
+          "seq": 147,
+          "date": "2026-08-12",
+          "retained": 6,
+          "height": 7
+        },
+        {
+          "seq": 148,
+          "date": "2026-08-13",
+          "retained": 2,
+          "height": 5
+        },
+        {
+          "seq": 149,
+          "date": "2026-08-14",
+          "retained": 1,
+          "height": 3
+        }
+      ],
+      "first_warning": "2026-08-13",
+      "follow_10": {
+        "status": {
+          "sold": 8,
+          "entry_block": 1,
+          "cash_or_liquidity": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.00361152500000001,
+        "fills": 8,
+        "positive": 0.3
+      },
+      "follow_30": {
+        "status": {
+          "sold": 8,
+          "entry_block": 1,
+          "cash_or_liquidity": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.005950505000000011,
+        "fills": 8,
+        "positive": 0.3
+      },
+      "follow_60": {
+        "status": {
+          "sold": 8,
+          "entry_block": 1,
+          "cash_or_liquidity": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.009458975000000008,
+        "fills": 8,
+        "positive": 0.3
+      },
+      "pullback_signals": 5,
+      "pullback_10": {
+        "status": {
+          "sold": 4,
+          "cash_or_liquidity": 1
+        },
+        "signals": 5,
+        "resolved": 5,
+        "net": 0.03454039000000013,
+        "fills": 4,
+        "positive": 0.6
+      }
+    },
+    {
+      "start": "2026-08-17",
+      "end": "2026-08-21",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-08-24",
+      "broad_days": 5,
+      "ratio": 2.5896175950394356,
+      "ratio_max": 2.5896175950394356,
+      "height": 4,
+      "regime": "strong",
+      "premium": 0.029564733534006557,
+      "breadth": 0.7720394736842106,
+      "members": [
+        {
+          "code": "sh.603330",
+          "name": "天洋新材",
+          "r5": 0.4779874214,
+          "height": 4
+        },
+        {
+          "code": "sz.002172",
+          "name": "澳洋健康",
+          "r5": 0.4633431085,
+          "height": 4
+        },
+        {
+          "code": "sz.002437",
+          "name": "誉衡药业",
+          "r5": 0.4518950437,
+          "height": 1
+        },
+        {
+          "code": "sz.002081",
+          "name": "金 螳 螂",
+          "r5": 0.4513715711,
+          "height": 4
+        },
+        {
+          "code": "sh.601886",
+          "name": "江河集团",
+          "r5": 0.4010989011,
+          "height": 0
+        },
+        {
+          "code": "sh.605179",
+          "name": "一鸣食品",
+          "r5": 0.3972929936,
+          "height": 1
+        },
+        {
+          "code": "sh.600613",
+          "name": "神奇制药",
+          "r5": 0.3583815029,
+          "height": 3
+        },
+        {
+          "code": "sh.600272",
+          "name": "开开实业",
+          "r5": 0.3335669236,
+          "height": 0
+        },
+        {
+          "code": "sh.603118",
+          "name": "共进股份",
+          "r5": 0.3160762943,
+          "height": 3
+        },
+        {
+          "code": "sz.002724",
+          "name": "海洋王",
+          "r5": 0.315018315,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 150,
+          "date": "2026-08-17",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 151,
+          "date": "2026-08-18",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 152,
+          "date": "2026-08-19",
+          "retained": 7,
+          "height": 3
+        },
+        {
+          "seq": 153,
+          "date": "2026-08-20",
+          "retained": 3,
+          "height": 4
+        },
+        {
+          "seq": 154,
+          "date": "2026-08-21",
+          "retained": 1,
+          "height": 3
+        }
+      ],
+      "first_warning": "2026-08-20",
+      "follow_10": {
+        "status": {
+          "entry_block": 2,
+          "sold": 8
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.07538694000000003,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "follow_30": {
+        "status": {
+          "entry_block": 2,
+          "sold": 8
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.07813120000000004,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "follow_60": {
+        "status": {
+          "entry_block": 2,
+          "sold": 8
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.08224759000000004,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "pullback_signals": 5,
+      "pullback_10": {
+        "status": {
+          "sold": 5
+        },
+        "signals": 5,
+        "resolved": 5,
+        "net": 0.003585529999999999,
+        "fills": 5,
+        "positive": 0.2
+      }
+    },
+    {
+      "start": "2026-08-24",
+      "end": "2026-08-31",
+      "strict_days": 5,
+      "duration_open": false,
+      "broad_exit": "2026-09-02",
+      "broad_days": 7,
+      "ratio": 2.8962546049988083,
+      "ratio_max": 2.8962546049988083,
+      "height": 4,
+      "regime": "mixed",
+      "premium": 0.0044576694966899305,
+      "breadth": 0.32511505588428663,
+      "members": [
+        {
+          "code": "sz.002412",
+          "name": "汉森制药",
+          "r5": 0.4926764314,
+          "height": 4
+        },
+        {
+          "code": "sh.600613",
+          "name": "神奇制药",
+          "r5": 0.4042553191,
+          "height": 1
+        },
+        {
+          "code": "sh.603958",
+          "name": "哈森股份",
+          "r5": 0.3474374255,
+          "height": 3
+        },
+        {
+          "code": "sh.600127",
+          "name": "金健米业",
+          "r5": 0.3095975232,
+          "height": 0
+        },
+        {
+          "code": "sz.000017",
+          "name": "深中华A",
+          "r5": 0.2990033223,
+          "height": 3
+        },
+        {
+          "code": "sz.000931",
+          "name": "中 关 村",
+          "r5": 0.2903225806,
+          "height": 3
+        },
+        {
+          "code": "sh.603580",
+          "name": "艾艾精工",
+          "r5": 0.2508591065,
+          "height": 0
+        },
+        {
+          "code": "sh.600610",
+          "name": "中毅达",
+          "r5": 0.2145862553,
+          "height": 1
+        },
+        {
+          "code": "sz.002716",
+          "name": "湖南白银",
+          "r5": 0.2075869336,
+          "height": 2
+        },
+        {
+          "code": "sz.000007",
+          "name": "全新好",
+          "r5": 0.198494826,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 155,
+          "date": "2026-08-24",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 156,
+          "date": "2026-08-25",
+          "retained": 8,
+          "height": 5
+        },
+        {
+          "seq": 157,
+          "date": "2026-08-26",
+          "retained": 7,
+          "height": 5
+        },
+        {
+          "seq": 158,
+          "date": "2026-08-27",
+          "retained": 7,
+          "height": 6
+        },
+        {
+          "seq": 159,
+          "date": "2026-08-28",
+          "retained": 4,
+          "height": 7
+        },
+        {
+          "seq": 160,
+          "date": "2026-08-31",
+          "retained": 2,
+          "height": 6
+        }
+      ],
+      "first_warning": "2026-08-28",
+      "follow_10": {
+        "status": {
+          "sold": 8,
+          "delayed": 1,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.03180056,
+        "fills": 9,
+        "positive": 0.5
+      },
+      "follow_30": {
+        "status": {
+          "sold": 8,
+          "delayed": 1,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.028439379999999993,
+        "fills": 9,
+        "positive": 0.5
+      },
+      "follow_60": {
+        "status": {
+          "sold": 8,
+          "delayed": 1,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.02339761,
+        "fills": 9,
+        "positive": 0.5
+      },
+      "pullback_signals": 1,
+      "pullback_10": {
+        "status": {
+          "sold": 1
+        },
+        "signals": 1,
+        "resolved": 1,
+        "net": -0.05999680000000037,
+        "fills": 1,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-09-01",
+      "end": "2026-09-07",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-09-09",
+      "broad_days": 6,
+      "ratio": 3.8434334991174652,
+      "ratio_max": 3.8434334991174652,
+      "height": 7,
+      "regime": "strong",
+      "premium": 0.012019882869133977,
+      "breadth": 0.6723571897570584,
+      "members": [
+        {
+          "code": "sh.600371",
+          "name": "万向德农",
+          "r5": 0.6101499423,
+          "height": 6
+        },
+        {
+          "code": "sz.002855",
+          "name": "捷荣技术",
+          "r5": 0.61,
+          "height": 6
+        },
+        {
+          "code": "sz.000712",
+          "name": "锦龙股份",
+          "r5": 0.5237020316,
+          "height": 0
+        },
+        {
+          "code": "sh.600540",
+          "name": "新赛股份",
+          "r5": 0.4890510949,
+          "height": 4
+        },
+        {
+          "code": "sh.600127",
+          "name": "金健米业",
+          "r5": 0.4221267454,
+          "height": 1
+        },
+        {
+          "code": "sz.002942",
+          "name": "新农股份",
+          "r5": 0.4061107575,
+          "height": 0
+        },
+        {
+          "code": "sz.002418",
+          "name": "康盛股份",
+          "r5": 0.4024691358,
+          "height": 0
+        },
+        {
+          "code": "sh.603269",
+          "name": "海鸥股份",
+          "r5": 0.3749321758,
+          "height": 0
+        },
+        {
+          "code": "sz.000017",
+          "name": "深中华A",
+          "r5": 0.3662790698,
+          "height": 0
+        },
+        {
+          "code": "sh.600227",
+          "name": "赤天化",
+          "r5": 0.3569553806,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 161,
+          "date": "2026-09-01",
+          "retained": 10,
+          "height": 7
+        },
+        {
+          "seq": 162,
+          "date": "2026-09-02",
+          "retained": 9,
+          "height": 5
+        },
+        {
+          "seq": 163,
+          "date": "2026-09-03",
+          "retained": 5,
+          "height": 5
+        },
+        {
+          "seq": 164,
+          "date": "2026-09-04",
+          "retained": 3,
+          "height": 5
+        },
+        {
+          "seq": 165,
+          "date": "2026-09-07",
+          "retained": 2,
+          "height": 6
+        }
+      ],
+      "first_warning": "2026-09-04",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.02091675000000013,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.024230730000000127,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.03018659500000013,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "pullback_signals": 4,
+      "pullback_10": {
+        "status": {
+          "sold": 4
+        },
+        "signals": 4,
+        "resolved": 4,
+        "net": -0.04195670000000003,
+        "fills": 4,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-09-08",
+      "end": "2026-09-11",
+      "strict_days": 3,
+      "duration_open": false,
+      "broad_exit": "2026-09-15",
+      "broad_days": 5,
+      "ratio": 3.471935081216722,
+      "ratio_max": 3.471935081216722,
+      "height": 4,
+      "regime": "strong",
+      "premium": 0.03169176770455145,
+      "breadth": 0.7178981937602628,
+      "members": [
+        {
+          "code": "sh.605577",
+          "name": "龙版传媒",
+          "r5": 0.5984589041,
+          "height": 0
+        },
+        {
+          "code": "sh.601086",
+          "name": "国芳集团",
+          "r5": 0.4816650149,
+          "height": 0
+        },
+        {
+          "code": "sz.002403",
+          "name": "爱仕达",
+          "r5": 0.4583333333,
+          "height": 4
+        },
+        {
+          "code": "sh.600865",
+          "name": "百大集团",
+          "r5": 0.4150360453,
+          "height": 4
+        },
+        {
+          "code": "sh.605580",
+          "name": "恒盛能源",
+          "r5": 0.3994413408,
+          "height": 0
+        },
+        {
+          "code": "sh.600108",
+          "name": "亚盛集团",
+          "r5": 0.3469387755,
+          "height": 4
+        },
+        {
+          "code": "sz.002909",
+          "name": "集泰股份",
+          "r5": 0.3172205438,
+          "height": 2
+        },
+        {
+          "code": "sz.002059",
+          "name": "云南旅游",
+          "r5": 0.3165618449,
+          "height": 0
+        },
+        {
+          "code": "sh.601949",
+          "name": "中国出版",
+          "r5": 0.3007380074,
+          "height": 3
+        },
+        {
+          "code": "sz.002980",
+          "name": "华盛昌",
+          "r5": 0.299489847,
+          "height": 2
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 166,
+          "date": "2026-09-08",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 167,
+          "date": "2026-09-09",
+          "retained": 8,
+          "height": 5
+        },
+        {
+          "seq": 168,
+          "date": "2026-09-10",
+          "retained": 4,
+          "height": 4
+        },
+        {
+          "seq": 169,
+          "date": "2026-09-11",
+          "retained": 2,
+          "height": 4
+        }
+      ],
+      "first_warning": "2026-09-10",
+      "follow_10": {
+        "status": {
+          "entry_block": 1,
+          "sold": 7,
+          "delayed": 1,
+          "cash_or_liquidity": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.12350082499999995,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "follow_30": {
+        "status": {
+          "entry_block": 1,
+          "sold": 7,
+          "delayed": 1,
+          "cash_or_liquidity": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.12635052499999996,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "follow_60": {
+        "status": {
+          "entry_block": 1,
+          "sold": 7,
+          "delayed": 1,
+          "cash_or_liquidity": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.13062507499999995,
+        "fills": 8,
+        "positive": 0.1
+      },
+      "pullback_signals": 7,
+      "pullback_10": {
+        "status": {
+          "sold": 6,
+          "cash_or_liquidity": 1
+        },
+        "signals": 7,
+        "resolved": 7,
+        "net": -0.13321821428571426,
+        "fills": 6,
+        "positive": 0.14285714285714285
+      }
+    },
+    {
+      "start": "2026-09-14",
+      "end": "2026-09-18",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-09-21",
+      "broad_days": 5,
+      "ratio": 5.5527970952291605,
+      "ratio_max": 5.5527970952291605,
+      "height": 4,
+      "regime": "mixed",
+      "premium": 0.032330752246996636,
+      "breadth": 0.5231679263884325,
+      "members": [
+        {
+          "code": "sz.000978",
+          "name": "桂林旅游",
+          "r5": 0.4917582418,
+          "height": 1
+        },
+        {
+          "code": "sz.000993",
+          "name": "闽东电力",
+          "r5": 0.4598470363,
+          "height": 4
+        },
+        {
+          "code": "sz.000823",
+          "name": "超声电子",
+          "r5": 0.4196988708,
+          "height": 3
+        },
+        {
+          "code": "sz.000980",
+          "name": "众泰汽车",
+          "r5": 0.3952095808,
+          "height": 2
+        },
+        {
+          "code": "sh.600876",
+          "name": "凯盛新能",
+          "r5": 0.3441011236,
+          "height": 3
+        },
+        {
+          "code": "sz.002790",
+          "name": "瑞尔特",
+          "r5": 0.3196850394,
+          "height": 0
+        },
+        {
+          "code": "sz.002912",
+          "name": "中新赛克",
+          "r5": 0.3034274194,
+          "height": 3
+        },
+        {
+          "code": "sh.605058",
+          "name": "澳弘电子",
+          "r5": 0.2838121934,
+          "height": 2
+        },
+        {
+          "code": "sh.603421",
+          "name": "鼎信通讯",
+          "r5": 0.2711864407,
+          "height": 0
+        },
+        {
+          "code": "sz.002201",
+          "name": "九鼎新材",
+          "r5": 0.2397790055,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 170,
+          "date": "2026-09-14",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 171,
+          "date": "2026-09-15",
+          "retained": 9,
+          "height": 5
+        },
+        {
+          "seq": 172,
+          "date": "2026-09-16",
+          "retained": 6,
+          "height": 6
+        },
+        {
+          "seq": 173,
+          "date": "2026-09-17",
+          "retained": 4,
+          "height": 5
+        },
+        {
+          "seq": 174,
+          "date": "2026-09-18",
+          "retained": 2,
+          "height": 4
+        }
+      ],
+      "first_warning": "2026-09-17",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.02666764000000003,
+        "fills": 9,
+        "positive": 0.3
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.029921360000000025,
+        "fills": 9,
+        "positive": 0.3
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.03480194000000002,
+        "fills": 9,
+        "positive": 0.2
+      },
+      "pullback_signals": 6,
+      "pullback_10": {
+        "status": {
+          "sold": 5,
+          "delayed": 1
+        },
+        "signals": 6,
+        "resolved": 6,
+        "net": -0.003044958333333486,
+        "fills": 6,
+        "positive": 0.3333333333333333
+      }
+    },
+    {
+      "start": "2026-09-21",
+      "end": "2026-09-29",
+      "strict_days": 5,
+      "duration_open": false,
+      "broad_exit": "2026-10-08",
+      "broad_days": 7,
+      "ratio": 4.090393990694335,
+      "ratio_max": 4.090393990694335,
+      "height": 5,
+      "regime": "strong",
+      "premium": 0.03556082673775413,
+      "breadth": 0.8291160039434768,
+      "members": [
+        {
+          "code": "sz.001216",
+          "name": "华瓷股份",
+          "r5": 0.6104417671,
+          "height": 5
+        },
+        {
+          "code": "sh.601579",
+          "name": "会稽山",
+          "r5": 0.5429303716,
+          "height": 2
+        },
+        {
+          "code": "sz.002631",
+          "name": "德尔未来",
+          "r5": 0.5237068966,
+          "height": 0
+        },
+        {
+          "code": "sh.603248",
+          "name": "锡华科技",
+          "r5": 0.4451728248,
+          "height": 0
+        },
+        {
+          "code": "sh.603230",
+          "name": "内蒙新华",
+          "r5": 0.4232245681,
+          "height": 4
+        },
+        {
+          "code": "sz.002285",
+          "name": "世联行",
+          "r5": 0.4133333333,
+          "height": 4
+        },
+        {
+          "code": "sz.003026",
+          "name": "中晶科技",
+          "r5": 0.3629496403,
+          "height": 0
+        },
+        {
+          "code": "sz.000993",
+          "name": "闽东电力",
+          "r5": 0.3379174853,
+          "height": 0
+        },
+        {
+          "code": "sh.605058",
+          "name": "澳弘电子",
+          "r5": 0.321779476,
+          "height": 0
+        },
+        {
+          "code": "sh.603001",
+          "name": "奥康国际",
+          "r5": 0.3183908046,
+          "height": 2
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 175,
+          "date": "2026-09-21",
+          "retained": 10,
+          "height": 5
+        },
+        {
+          "seq": 176,
+          "date": "2026-09-22",
+          "retained": 8,
+          "height": 6
+        },
+        {
+          "seq": 177,
+          "date": "2026-09-23",
+          "retained": 6,
+          "height": 4
+        },
+        {
+          "seq": 178,
+          "date": "2026-09-24",
+          "retained": 6,
+          "height": 5
+        },
+        {
+          "seq": 179,
+          "date": "2026-09-28",
+          "retained": 4,
+          "height": 5
+        },
+        {
+          "seq": 180,
+          "date": "2026-09-29",
+          "retained": 1,
+          "height": 6
+        }
+      ],
+      "first_warning": "2026-09-28",
+      "follow_10": {
+        "status": {
+          "entry_block": 1,
+          "sold": 8,
+          "delayed": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.016990465000000073,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "follow_30": {
+        "status": {
+          "entry_block": 1,
+          "sold": 8,
+          "delayed": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.02011686500000007,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "follow_60": {
+        "status": {
+          "entry_block": 1,
+          "sold": 8,
+          "delayed": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.024806465000000076,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "pullback_signals": 6,
+      "pullback_10": {
+        "status": {
+          "sold": 6
+        },
+        "signals": 6,
+        "resolved": 6,
+        "net": -0.03318484166666682,
+        "fills": 6,
+        "positive": 0.16666666666666666
+      }
+    },
+    {
+      "start": "2026-09-30",
+      "end": "2026-10-13",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-10-14",
+      "broad_days": 5,
+      "ratio": 4.959638209152149,
+      "ratio_max": 4.971364043035137,
+      "height": 7,
+      "regime": "mixed",
+      "premium": 0.006614580236209557,
+      "breadth": 0.5394996708360764,
+      "members": [
+        {
+          "code": "sz.000678",
+          "name": "襄阳轴承",
+          "r5": 0.449943757,
+          "height": 4
+        },
+        {
+          "code": "sh.600802",
+          "name": "福建水泥",
+          "r5": 0.323583181,
+          "height": 0
+        },
+        {
+          "code": "sh.603949",
+          "name": "雪龙集团",
+          "r5": 0.3187679083,
+          "height": 0
+        },
+        {
+          "code": "sh.600241",
+          "name": "时代万恒",
+          "r5": 0.3135135135,
+          "height": 3
+        },
+        {
+          "code": "sz.002242",
+          "name": "九阳股份",
+          "r5": 0.3102725367,
+          "height": 3
+        },
+        {
+          "code": "sh.600418",
+          "name": "江淮汽车",
+          "r5": 0.2884615385,
+          "height": 0
+        },
+        {
+          "code": "sz.000011",
+          "name": "深物业A",
+          "r5": 0.2723492723,
+          "height": 3
+        },
+        {
+          "code": "sh.601811",
+          "name": "新华文轩",
+          "r5": 0.255648038,
+          "height": 0
+        },
+        {
+          "code": "sz.002962",
+          "name": "五方光电",
+          "r5": 0.185483871,
+          "height": 1
+        },
+        {
+          "code": "sh.605388",
+          "name": "均瑶健康",
+          "r5": 0.1786283892,
+          "height": 2
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 181,
+          "date": "2026-09-30",
+          "retained": 10,
+          "height": 7
+        },
+        {
+          "seq": 182,
+          "date": "2026-10-08",
+          "retained": 7,
+          "height": 8
+        },
+        {
+          "seq": 183,
+          "date": "2026-10-09",
+          "retained": 5,
+          "height": 9
+        },
+        {
+          "seq": 184,
+          "date": "2026-10-12",
+          "retained": 4,
+          "height": 10
+        },
+        {
+          "seq": 185,
+          "date": "2026-10-13",
+          "retained": 2,
+          "height": 3
+        }
+      ],
+      "first_warning": "2026-10-12",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.03014513499999994,
+        "fills": 9,
+        "positive": 0.2
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.033412234999999936,
+        "fills": 9,
+        "positive": 0.2
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.036347264999999934,
+        "fills": 9,
+        "positive": 0.2
+      },
+      "pullback_signals": 4,
+      "pullback_10": {
+        "status": {
+          "sold": 4
+        },
+        "signals": 4,
+        "resolved": 4,
+        "net": -0.05192055000000005,
+        "fills": 4,
+        "positive": 0.25
+      }
+    },
+    {
+      "start": "2026-10-14",
+      "end": "2026-10-19",
+      "strict_days": 3,
+      "duration_open": false,
+      "broad_exit": "2026-10-22",
+      "broad_days": 6,
+      "ratio": 3.7150433413162154,
+      "ratio_max": 3.7334156030643437,
+      "height": 4,
+      "regime": "weak",
+      "premium": -0.002320445172903933,
+      "breadth": 0.221419185282523,
+      "members": [
+        {
+          "code": "sz.002696",
+          "name": "百洋股份",
+          "r5": 0.4817629179,
+          "height": 4
+        },
+        {
+          "code": "sz.002343",
+          "name": "慈文传媒",
+          "r5": 0.4361702128,
+          "height": 4
+        },
+        {
+          "code": "sh.603096",
+          "name": "新经典",
+          "r5": 0.4329192547,
+          "height": 4
+        },
+        {
+          "code": "sz.002242",
+          "name": "九阳股份",
+          "r5": 0.4152,
+          "height": 0
+        },
+        {
+          "code": "sh.603968",
+          "name": "醋化股份",
+          "r5": 0.3739130435,
+          "height": 3
+        },
+        {
+          "code": "sh.600241",
+          "name": "时代万恒",
+          "r5": 0.3590534979,
+          "height": 0
+        },
+        {
+          "code": "sh.600693",
+          "name": "东百集团",
+          "r5": 0.3079399142,
+          "height": 0
+        },
+        {
+          "code": "sh.605287",
+          "name": "德才股份",
+          "r5": 0.3078363199,
+          "height": 0
+        },
+        {
+          "code": "sh.600400",
+          "name": "红豆股份",
+          "r5": 0.2978723404,
+          "height": 0
+        },
+        {
+          "code": "sh.600408",
+          "name": "安泰集团",
+          "r5": 0.2971246006,
+          "height": 1
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 186,
+          "date": "2026-10-14",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 187,
+          "date": "2026-10-15",
+          "retained": 8,
+          "height": 5
+        },
+        {
+          "seq": 188,
+          "date": "2026-10-16",
+          "retained": 4,
+          "height": 4
+        },
+        {
+          "seq": 189,
+          "date": "2026-10-19",
+          "retained": 1,
+          "height": 3
+        }
+      ],
+      "first_warning": "2026-10-16",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.07560886500000005,
+        "fills": 9,
+        "positive": 0.1
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.07878814500000005,
+        "fills": 9,
+        "positive": 0.1
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.08355706500000004,
+        "fills": 9,
+        "positive": 0.1
+      },
+      "pullback_signals": 2,
+      "pullback_10": {
+        "status": {
+          "sold": 2
+        },
+        "signals": 2,
+        "resolved": 2,
+        "net": 0.11706915000000019,
+        "fills": 2,
+        "positive": 1.0
+      }
+    },
+    {
+      "start": "2026-10-20",
+      "end": "2026-10-26",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-10-27",
+      "broad_days": 5,
+      "ratio": 4.576534649596568,
+      "ratio_max": 4.696494936106953,
+      "height": 4,
+      "regime": "mixed",
+      "premium": 0.029487038650339182,
+      "breadth": 0.5397242284963887,
+      "members": [
+        {
+          "code": "sz.000530",
+          "name": "冰山冷热",
+          "r5": 0.4258289703,
+          "height": 0
+        },
+        {
+          "code": "sz.003029",
+          "name": "吉大正元",
+          "r5": 0.4012638231,
+          "height": 4
+        },
+        {
+          "code": "sz.002343",
+          "name": "慈文传媒",
+          "r5": 0.3926630435,
+          "height": 0
+        },
+        {
+          "code": "sz.002724",
+          "name": "海洋王",
+          "r5": 0.3079096045,
+          "height": 3
+        },
+        {
+          "code": "sh.600178",
+          "name": "东安动力",
+          "r5": 0.2637474542,
+          "height": 3
+        },
+        {
+          "code": "sh.600860",
+          "name": "京城股份",
+          "r5": 0.2625329815,
+          "height": 3
+        },
+        {
+          "code": "sh.600148",
+          "name": "长春一东",
+          "r5": 0.25158831,
+          "height": 3
+        },
+        {
+          "code": "sh.603386",
+          "name": "骏亚科技",
+          "r5": 0.2427017745,
+          "height": 1
+        },
+        {
+          "code": "sz.002889",
+          "name": "东方嘉盛",
+          "r5": 0.2221297837,
+          "height": 0
+        },
+        {
+          "code": "sh.603278",
+          "name": "大业股份",
+          "r5": 0.2160243408,
+          "height": 3
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 190,
+          "date": "2026-10-20",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 191,
+          "date": "2026-10-21",
+          "retained": 9,
+          "height": 4
+        },
+        {
+          "seq": 192,
+          "date": "2026-10-22",
+          "retained": 5,
+          "height": 5
+        },
+        {
+          "seq": 193,
+          "date": "2026-10-23",
+          "retained": 3,
+          "height": 6
+        },
+        {
+          "seq": 194,
+          "date": "2026-10-26",
+          "retained": 2,
+          "height": 4
+        }
+      ],
+      "first_warning": "2026-10-23",
+      "follow_10": {
+        "status": {
+          "sold": 6,
+          "delayed": 1,
+          "entry_block": 3
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.09684581999999997,
+        "fills": 7,
+        "positive": 0.1
+      },
+      "follow_30": {
+        "status": {
+          "sold": 6,
+          "delayed": 1,
+          "entry_block": 3
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.099245,
+        "fills": 7,
+        "positive": 0.1
+      },
+      "follow_60": {
+        "status": {
+          "sold": 6,
+          "delayed": 1,
+          "entry_block": 3
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.10284376999999997,
+        "fills": 7,
+        "positive": 0.1
+      },
+      "pullback_signals": 2,
+      "pullback_10": {
+        "status": {
+          "sold": 2
+        },
+        "signals": 2,
+        "resolved": 2,
+        "net": -0.11229979999999995,
+        "fills": 2,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-10-27",
+      "end": "2026-11-02",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-11-03",
+      "broad_days": 5,
+      "ratio": 4.322206135413867,
+      "ratio_max": 4.4707341043264925,
+      "height": 5,
+      "regime": "mixed",
+      "premium": 0.01001602012871881,
+      "breadth": 0.13699080157687255,
+      "members": [
+        {
+          "code": "sh.600838",
+          "name": "上海九百",
+          "r5": 0.6113801453,
+          "height": 5
+        },
+        {
+          "code": "sh.603028",
+          "name": "赛福天",
+          "r5": 0.4757142857,
+          "height": 4
+        },
+        {
+          "code": "sh.603528",
+          "name": "多伦科技",
+          "r5": 0.4571005917,
+          "height": 4
+        },
+        {
+          "code": "sh.603278",
+          "name": "大业股份",
+          "r5": 0.4512093411,
+          "height": 0
+        },
+        {
+          "code": "sz.000678",
+          "name": "襄阳轴承",
+          "r5": 0.4281891169,
+          "height": 4
+        },
+        {
+          "code": "sh.605488",
+          "name": "福莱新材",
+          "r5": 0.4259438529,
+          "height": 0
+        },
+        {
+          "code": "sz.002724",
+          "name": "海洋王",
+          "r5": 0.4136069114,
+          "height": 1
+        },
+        {
+          "code": "sh.600785",
+          "name": "新华百货",
+          "r5": 0.2894248609,
+          "height": 1
+        },
+        {
+          "code": "sz.003021",
+          "name": "兆威机电",
+          "r5": 0.2746313904,
+          "height": 0
+        },
+        {
+          "code": "sh.603089",
+          "name": "正裕工业",
+          "r5": 0.2468220339,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 195,
+          "date": "2026-10-27",
+          "retained": 10,
+          "height": 5
+        },
+        {
+          "seq": 196,
+          "date": "2026-10-28",
+          "retained": 9,
+          "height": 5
+        },
+        {
+          "seq": 197,
+          "date": "2026-10-29",
+          "retained": 5,
+          "height": 4
+        },
+        {
+          "seq": 198,
+          "date": "2026-10-30",
+          "retained": 3,
+          "height": 5
+        },
+        {
+          "seq": 199,
+          "date": "2026-11-02",
+          "retained": 1,
+          "height": 6
+        }
+      ],
+      "first_warning": "2026-10-30",
+      "follow_10": {
+        "status": {
+          "sold": 10
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.08954748500000002,
+        "fills": 10,
+        "positive": 0.1
+      },
+      "follow_30": {
+        "status": {
+          "sold": 10
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.09308200500000002,
+        "fills": 10,
+        "positive": 0.1
+      },
+      "follow_60": {
+        "status": {
+          "sold": 10
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.09838378500000004,
+        "fills": 10,
+        "positive": 0.1
+      },
+      "pullback_signals": 4,
+      "pullback_10": {
+        "status": {
+          "sold": 4
+        },
+        "signals": 4,
+        "resolved": 4,
+        "net": -0.052392550000000176,
+        "fills": 4,
+        "positive": 0.25
+      }
+    },
+    {
+      "start": "2026-11-03",
+      "end": "2026-11-06",
+      "strict_days": 3,
+      "duration_open": false,
+      "broad_exit": "2026-11-11",
+      "broad_days": 6,
+      "ratio": 2.7693039167897666,
+      "ratio_max": 2.7917378809820024,
+      "height": 4,
+      "regime": "mixed",
+      "premium": 0.011921973187514865,
+      "breadth": 0.4965494577719356,
+      "members": [
+        {
+          "code": "sz.002172",
+          "name": "澳洋健康",
+          "r5": 0.5315315315,
+          "height": 0
+        },
+        {
+          "code": "sz.001219",
+          "name": "青岛食品",
+          "r5": 0.4659546061,
+          "height": 0
+        },
+        {
+          "code": "sh.600261",
+          "name": "阳光照明",
+          "r5": 0.4558823529,
+          "height": 4
+        },
+        {
+          "code": "sz.002086",
+          "name": "东方海洋",
+          "r5": 0.4309623431,
+          "height": 4
+        },
+        {
+          "code": "sh.600715",
+          "name": "文投控股",
+          "r5": 0.3155080214,
+          "height": 2
+        },
+        {
+          "code": "sz.002275",
+          "name": "桂林三金",
+          "r5": 0.3090306545,
+          "height": 0
+        },
+        {
+          "code": "sz.002029",
+          "name": "七 匹 狼",
+          "r5": 0.29125,
+          "height": 2
+        },
+        {
+          "code": "sz.000678",
+          "name": "襄阳轴承",
+          "r5": 0.2654590881,
+          "height": 0
+        },
+        {
+          "code": "sz.000525",
+          "name": "红太阳",
+          "r5": 0.255,
+          "height": 0
+        },
+        {
+          "code": "sz.000410",
+          "name": "沈阳机床",
+          "r5": 0.2377919321,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 200,
+          "date": "2026-11-03",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 201,
+          "date": "2026-11-04",
+          "retained": 7,
+          "height": 3
+        },
+        {
+          "seq": 202,
+          "date": "2026-11-05",
+          "retained": 4,
+          "height": 4
+        },
+        {
+          "seq": 203,
+          "date": "2026-11-06",
+          "retained": 3,
+          "height": 5
+        }
+      ],
+      "first_warning": "2026-11-05",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.01053086999999998,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.007033709999999982,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": 0.0018978249999999808,
+        "fills": 9,
+        "positive": 0.4
+      },
+      "pullback_signals": 3,
+      "pullback_10": {
+        "status": {
+          "sold": 3
+        },
+        "signals": 3,
+        "resolved": 3,
+        "net": 0.16671981666666671,
+        "fills": 3,
+        "positive": 1.0
+      }
+    },
+    {
+      "start": "2026-11-09",
+      "end": "2026-11-16",
+      "strict_days": 5,
+      "duration_open": false,
+      "broad_exit": "2026-11-16",
+      "broad_days": 5,
+      "ratio": 2.716215918231209,
+      "ratio_max": 2.8285173617704054,
+      "height": 6,
+      "regime": "mixed",
+      "premium": 0.04462019150579038,
+      "breadth": 0.3767640301936331,
+      "members": [
+        {
+          "code": "sz.002578",
+          "name": "闽发铝业",
+          "r5": 0.6111111111,
+          "height": 6
+        },
+        {
+          "code": "sh.601599",
+          "name": "浙文影业",
+          "r5": 0.5504322767,
+          "height": 0
+        },
+        {
+          "code": "sz.002088",
+          "name": "鲁阳节能",
+          "r5": 0.463672391,
+          "height": 0
+        },
+        {
+          "code": "sh.603381",
+          "name": "永臻股份",
+          "r5": 0.4053672316,
+          "height": 0
+        },
+        {
+          "code": "sz.002086",
+          "name": "东方海洋",
+          "r5": 0.4051446945,
+          "height": 3
+        },
+        {
+          "code": "sh.600371",
+          "name": "万向德农",
+          "r5": 0.3743641913,
+          "height": 0
+        },
+        {
+          "code": "sh.600327",
+          "name": "大东方",
+          "r5": 0.3670886076,
+          "height": 2
+        },
+        {
+          "code": "sz.002811",
+          "name": "郑中设计",
+          "r5": 0.3202805377,
+          "height": 1
+        },
+        {
+          "code": "sz.002889",
+          "name": "东方嘉盛",
+          "r5": 0.3057324841,
+          "height": 2
+        },
+        {
+          "code": "sz.000603",
+          "name": "盛达资源",
+          "r5": 0.2933768657,
+          "height": 0
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 204,
+          "date": "2026-11-09",
+          "retained": 10,
+          "height": 6
+        },
+        {
+          "seq": 205,
+          "date": "2026-11-10",
+          "retained": 9,
+          "height": 7
+        },
+        {
+          "seq": 206,
+          "date": "2026-11-11",
+          "retained": 6,
+          "height": 4
+        },
+        {
+          "seq": 207,
+          "date": "2026-11-12",
+          "retained": 5,
+          "height": 5
+        },
+        {
+          "seq": 208,
+          "date": "2026-11-13",
+          "retained": 2,
+          "height": 4
+        },
+        {
+          "seq": 209,
+          "date": "2026-11-16",
+          "retained": 0,
+          "height": 4
+        }
+      ],
+      "first_warning": "2026-11-13",
+      "follow_10": {
+        "status": {
+          "sold": 5,
+          "delayed": 4,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.16700288000000002,
+        "fills": 9,
+        "positive": 0.0
+      },
+      "follow_30": {
+        "status": {
+          "sold": 5,
+          "delayed": 4,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.17006518,
+        "fills": 9,
+        "positive": 0.0
+      },
+      "follow_60": {
+        "status": {
+          "sold": 5,
+          "delayed": 4,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.17465862999999998,
+        "fills": 9,
+        "positive": 0.0
+      },
+      "pullback_signals": 6,
+      "pullback_10": {
+        "status": {
+          "sold": 4,
+          "delayed": 2
+        },
+        "signals": 6,
+        "resolved": 6,
+        "net": -0.18019214166666667,
+        "fills": 6,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-11-17",
+      "end": "2026-11-23",
+      "strict_days": 4,
+      "duration_open": false,
+      "broad_exit": "2026-11-24",
+      "broad_days": 5,
+      "ratio": 3.512373243400338,
+      "ratio_max": 3.557802374121568,
+      "height": 3,
+      "regime": "weak",
+      "premium": -0.001801227983753432,
+      "breadth": 0.2651788644568428,
+      "members": [
+        {
+          "code": "sz.002187",
+          "name": "广百股份",
+          "r5": 0.3893653516,
+          "height": 0
+        },
+        {
+          "code": "sz.002685",
+          "name": "华东重机",
+          "r5": 0.3871635611,
+          "height": 3
+        },
+        {
+          "code": "sz.002148",
+          "name": "北纬科技",
+          "r5": 0.3584589615,
+          "height": 0
+        },
+        {
+          "code": "sz.002425",
+          "name": "凯撒文化",
+          "r5": 0.3362068966,
+          "height": 0
+        },
+        {
+          "code": "sz.002205",
+          "name": "国统股份",
+          "r5": 0.2367149758,
+          "height": 0
+        },
+        {
+          "code": "sh.600467",
+          "name": "好当家",
+          "r5": 0.2276785714,
+          "height": 1
+        },
+        {
+          "code": "sh.600410",
+          "name": "华胜天成",
+          "r5": 0.2077409163,
+          "height": 1
+        },
+        {
+          "code": "sz.002748",
+          "name": "世龙实业",
+          "r5": 0.1981651376,
+          "height": 0
+        },
+        {
+          "code": "sh.600936",
+          "name": "北投科技",
+          "r5": 0.1978319783,
+          "height": 2
+        },
+        {
+          "code": "sz.002959",
+          "name": "小熊电器",
+          "r5": 0.1825726141,
+          "height": 2
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 210,
+          "date": "2026-11-17",
+          "retained": 10,
+          "height": 3
+        },
+        {
+          "seq": 211,
+          "date": "2026-11-18",
+          "retained": 10,
+          "height": 4
+        },
+        {
+          "seq": 212,
+          "date": "2026-11-19",
+          "retained": 5,
+          "height": 3
+        },
+        {
+          "seq": 213,
+          "date": "2026-11-20",
+          "retained": 3,
+          "height": 4
+        },
+        {
+          "seq": 214,
+          "date": "2026-11-23",
+          "retained": 4,
+          "height": 5
+        }
+      ],
+      "first_warning": "2026-11-20",
+      "follow_10": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.04676439499999996,
+        "fills": 9,
+        "positive": 0.3
+      },
+      "follow_30": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.04887753499999996,
+        "fills": 9,
+        "positive": 0.3
+      },
+      "follow_60": {
+        "status": {
+          "sold": 9,
+          "entry_block": 1
+        },
+        "signals": 10,
+        "resolved": 10,
+        "net": -0.05314872999999998,
+        "fills": 9,
+        "positive": 0.3
+      },
+      "pullback_signals": 3,
+      "pullback_10": {
+        "status": {
+          "sold": 1,
+          "open": 2
+        },
+        "signals": 3,
+        "resolved": 1,
+        "net": -0.1184452,
+        "fills": 3,
+        "positive": 0.0
+      }
+    },
+    {
+      "start": "2026-11-24",
+      "end": null,
+      "strict_days": 1,
+      "duration_open": true,
+      "broad_exit": null,
+      "broad_days": 1,
+      "ratio": 5.423960825444048,
+      "ratio_max": 5.470239059384133,
+      "height": 4,
+      "regime": "mixed",
+      "premium": 0.03660592217439417,
+      "breadth": 0.2915710068875041,
+      "members": [
+        {
+          "code": "sz.002579",
+          "name": "中京电子",
+          "r5": 0.4862385321,
+          "height": 4
+        },
+        {
+          "code": "sz.002771",
+          "name": "真视通",
+          "r5": 0.4587542088,
+          "height": 0
+        },
+        {
+          "code": "sh.603324",
+          "name": "盛剑科技",
+          "r5": 0.409221902,
+          "height": 0
+        },
+        {
+          "code": "sz.002148",
+          "name": "北纬科技",
+          "r5": 0.4069050555,
+          "height": 0
+        },
+        {
+          "code": "sz.000711",
+          "name": "京蓝科技",
+          "r5": 0.3417721519,
+          "height": 0
+        },
+        {
+          "code": "sz.002685",
+          "name": "华东重机",
+          "r5": 0.3358208955,
+          "height": 2
+        },
+        {
+          "code": "sz.002199",
+          "name": "东晶电子",
+          "r5": 0.2794612795,
+          "height": 0
+        },
+        {
+          "code": "sh.603960",
+          "name": "克来机电",
+          "r5": 0.2685671418,
+          "height": 3
+        },
+        {
+          "code": "sh.605018",
+          "name": "长华集团",
+          "r5": 0.2596348884,
+          "height": 3
+        },
+        {
+          "code": "sz.001358",
+          "name": "兴欣新材",
+          "r5": 0.2552350849,
+          "height": 2
+        }
+      ],
+      "trajectory": [
+        {
+          "seq": 215,
+          "date": "2026-11-24",
+          "retained": 10,
+          "height": 4
+        }
+      ],
+      "first_warning": null,
+      "follow_10": {
+        "status": {
+          "entry_pending": 10
+        },
+        "signals": 10,
+        "resolved": 0,
+        "net": null,
+        "fills": 0,
+        "positive": null
+      },
+      "follow_30": {
+        "status": {
+          "entry_pending": 10
+        },
+        "signals": 10,
+        "resolved": 0,
+        "net": null,
+        "fills": 0,
+        "positive": null
+      },
+      "follow_60": {
+        "status": {
+          "entry_pending": 10
+        },
+        "signals": 10,
+        "resolved": 0,
+        "net": null,
+        "fills": 0,
+        "positive": null
+      },
+      "pullback_signals": 0,
+      "pullback_10": {
+        "status": {},
+        "signals": 0,
+        "resolved": 0,
+        "net": null,
+        "fills": 0,
+        "positive": null
+      }
+    }
+  ],
+  "pullbacks": [
+    {
+      "date": "2026-07-01",
+      "code": "sh.603163",
+      "name": "圣晖集成",
+      "trade_10": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_30": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_60": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-01",
+      "code": "sh.603650",
+      "name": "彤程新材",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.04781919999999982,
+        "exit": 121
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.051227799999999823,
+        "exit": 121
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.05634069999999982,
+        "exit": 121
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-01",
+      "code": "sh.603929",
+      "name": "亚翔集成",
+      "trade_10": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_30": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_60": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-01",
+      "code": "sh.605366",
+      "name": "宏柏新材",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.091318,
+        "exit": 121
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.095062,
+        "exit": 121
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.100678,
+        "exit": 121
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-07",
+      "code": "sz.000520",
+      "name": "凤凰航运",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.062137300000000006,
+        "exit": 125
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.0659005,
+        "exit": 125
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.07154529999999999,
+        "exit": 125
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-07",
+      "code": "sz.000938",
+      "name": "紫光股份",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.07575710000000001,
+        "exit": 125
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.0728399,
+        "exit": 125
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.06846410000000001,
+        "exit": 125
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-07-07",
+      "code": "sz.002472",
+      "name": "双环传动",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.040191500000000185,
+        "exit": 125
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.04371270000000018,
+        "exit": 125
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.048994500000000184,
+        "exit": 125
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-07",
+      "code": "sz.002979",
+      "name": "雷赛智能",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.034347949999999905,
+        "exit": 125
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.03699734999999991,
+        "exit": 125
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.04097144999999991,
+        "exit": 125
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-08",
+      "code": "sh.600793",
+      "name": "宜宾纸业",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.13149475,
+        "exit": 126
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.13473775000000002,
+        "exit": 126
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.13960225,
+        "exit": 126
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-13",
+      "code": "sz.000892",
+      "name": "欢瑞世纪",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.0465652,
+        "exit": 129
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.050366799999999996,
+        "exit": 129
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.0560692,
+        "exit": 129
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-13",
+      "code": "sz.000977",
+      "name": "浪潮信息",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.033055150000000005,
+        "exit": 129
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.03651535,
+        "exit": 129
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.041705650000000004,
+        "exit": 129
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-13",
+      "code": "sz.001229",
+      "name": "魅视科技",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.1311025,
+        "exit": 129
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.13451770000000002,
+        "exit": 129
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.1396405,
+        "exit": 129
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-13",
+      "code": "sz.002185",
+      "name": "华天科技",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.17191879999999993,
+        "exit": 129
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.1753763999999999,
+        "exit": 129
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.1805627999999999,
+        "exit": 129
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-07-13",
+      "code": "sz.002828",
+      "name": "贝肯能源",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.06690219999999983,
+        "exit": 129
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.07045119999999981,
+        "exit": 129
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.07577469999999982,
+        "exit": 129
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-13",
+      "code": "sz.002841",
+      "name": "视源股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.03133135,
+        "exit": 129
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.03331315,
+        "exit": 129
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.03628585000000001,
+        "exit": 129
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-17",
+      "code": "sz.002365",
+      "name": "永安药业",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.024614,
+        "exit": 133
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.020807600000000002,
+        "exit": 133
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.015097999999999999,
+        "exit": 133
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-17",
+      "code": "sz.002379",
+      "name": "宏桥控股",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.017697249999999817,
+        "exit": 133
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.014021249999999819,
+        "exit": 133
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.00850724999999982,
+        "exit": 133
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-07-24",
+      "code": "sh.600744",
+      "name": "华银电力",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.02022765,
+        "exit": 138
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.02395865,
+        "exit": 138
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.029555150000000002,
+        "exit": 138
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-24",
+      "code": "sh.603619",
+      "name": "中曼石油",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.05566880000000018,
+        "exit": 138
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.05228240000000019,
+        "exit": 138
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.04720280000000018,
+        "exit": 138
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-28",
+      "code": "sz.000815",
+      "name": "美利云",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.007425799999999637,
+        "exit": 140
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.003631399999999638,
+        "exit": 140
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.002060200000000363,
+        "exit": 140
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-28",
+      "code": "sz.002197",
+      "name": "证通电子",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.04139129999999982,
+        "exit": 140
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.03755529999999982,
+        "exit": 140
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.03180129999999982,
+        "exit": 140
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-07-28",
+      "code": "sz.002879",
+      "name": "长缆科技",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.07113175,
+        "exit": 140
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.07456975,
+        "exit": 140
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.07972675,
+        "exit": 140
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-03",
+      "code": "sh.605388",
+      "name": "均瑶健康",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.0177384,
+        "exit": 144
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.0214856,
+        "exit": 144
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.027106399999999996,
+        "exit": 144
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-03",
+      "code": "sz.000428",
+      "name": "华天酒店",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.019022499999999998,
+        "exit": 144
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.015067500000000001,
+        "exit": 144
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.009134999999999999,
+        "exit": 144
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-04",
+      "code": "sz.002882",
+      "name": "金龙羽",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.0104352,
+        "exit": 145
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.0140144,
+        "exit": 145
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.0193832,
+        "exit": 145
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-05",
+      "code": "sh.600228",
+      "name": "返利科技",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.0362216,
+        "exit": 146
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.032432,
+        "exit": 146
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.0267476,
+        "exit": 146
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-08-10",
+      "code": "sh.600397",
+      "name": "江钨装备",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.009825500000000181,
+        "exit": 149
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.006351500000000182,
+        "exit": 149
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.0011405000000001806,
+        "exit": 149
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-08-11",
+      "code": "sz.002428",
+      "name": "云南锗业",
+      "trade_10": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_30": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_60": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-08-11",
+      "code": "sz.002792",
+      "name": "通宇通讯",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.0350378,
+        "exit": 150
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.0322334,
+        "exit": 150
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.028026799999999998,
+        "exit": 150
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-08-11",
+      "code": "sz.002827",
+      "name": "高争民爆",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.021338649999999907,
+        "exit": 150
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.023648049999999907,
+        "exit": 150
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.02711214999999991,
+        "exit": 150
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-08-13",
+      "code": "sh.603823",
+      "name": "百合花",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.14917730000000035,
+        "exit": 152
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.14584190000000039,
+        "exit": 152
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.14083880000000035,
+        "exit": 152
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-08-18",
+      "code": "sh.603118",
+      "name": "共进股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.0577245,
+        "exit": 155
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.06130549999999999,
+        "exit": 155
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.066677,
+        "exit": 155
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-18",
+      "code": "sh.603330",
+      "name": "天洋新材",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.012252250000000001,
+        "exit": 155
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.015859449999999997,
+        "exit": 155
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.021270249999999997,
+        "exit": 155
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-18",
+      "code": "sz.002437",
+      "name": "誉衡药业",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.087299,
+        "exit": 155
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.091011,
+        "exit": 155
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.09657900000000001,
+        "exit": 155
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-20",
+      "code": "sh.600272",
+      "name": "开开实业",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.1768541,
+        "exit": 157
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.1725329,
+        "exit": 157
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.1660511,
+        "exit": 157
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-20",
+      "code": "sz.002081",
+      "name": "金 螳 螂",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.0016506999999999997,
+        "exit": 157
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.005571100000000001,
+        "exit": 157
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.011451700000000002,
+        "exit": 157
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-08-25",
+      "code": "sh.603958",
+      "name": "哈森股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.05999680000000037,
+        "exit": 160
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.06353440000000037,
+        "exit": 160
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.06884080000000037,
+        "exit": 160
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-09-02",
+      "code": "sh.600227",
+      "name": "赤天化",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.03910345,
+        "exit": 166
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.04296325,
+        "exit": 166
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.048752949999999996,
+        "exit": 166
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-02",
+      "code": "sz.000712",
+      "name": "锦龙股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.055712000000000185,
+        "exit": 166
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.05927220000000018,
+        "exit": 166
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.06461250000000018,
+        "exit": 166
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-03",
+      "code": "sz.002418",
+      "name": "康盛股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.008848900000000182,
+        "exit": 167
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.012769300000000183,
+        "exit": 167
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.01864990000000018,
+        "exit": 167
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-04",
+      "code": "sh.603269",
+      "name": "海鸥股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.06416244999999973,
+        "exit": 168
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.06732684999999973,
+        "exit": 168
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.07207344999999973,
+        "exit": 168
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-09",
+      "code": "sh.601949",
+      "name": "中国出版",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.15436370000000008,
+        "exit": 171
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.15788610000000008,
+        "exit": 171
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.1631697000000001,
+        "exit": 171
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-09",
+      "code": "sh.605580",
+      "name": "恒盛能源",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.05936379999999981,
+        "exit": 171
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.05549099999999982,
+        "exit": 171
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.049681799999999825,
+        "exit": 171
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-09",
+      "code": "sz.002059",
+      "name": "云南旅游",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.2010654999999998,
+        "exit": 171
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.2044494999999998,
+        "exit": 171
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.20952549999999984,
+        "exit": 171
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-09-09",
+      "code": "sz.002909",
+      "name": "集泰股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.2230349999999999,
+        "exit": 171
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.2263789999999999,
+        "exit": 171
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.23139499999999993,
+        "exit": 171
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-10",
+      "code": "sh.600865",
+      "name": "百大集团",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.26078949999999984,
+        "exit": 172
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.26375589999999977,
+        "exit": 172
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.2682054999999998,
+        "exit": 172
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-10",
+      "code": "sz.002403",
+      "name": "爱仕达",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.1526375999999999,
+        "exit": 172
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.15595759999999992,
+        "exit": 172
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.1609375999999999,
+        "exit": 172
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-10",
+      "code": "sz.002980",
+      "name": "华盛昌",
+      "trade_10": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_30": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "trade_60": {
+        "status": "cash_or_liquidity",
+        "net": 0.0
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-15",
+      "code": "sz.000980",
+      "name": "众泰汽车",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.04343849999999982,
+        "exit": 175
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.039358899999999815,
+        "exit": 175
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.03251099999999982,
+        "exit": 175
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-09-15",
+      "code": "sz.002201",
+      "name": "九鼎新材",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.021382750000000367,
+        "exit": 175
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.025202350000000363,
+        "exit": 175
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.03093175000000036,
+        "exit": 175
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-16",
+      "code": "sh.600876",
+      "name": "凯盛新能",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.01978800000000018,
+        "exit": 176
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.023455400000000178,
+        "exit": 176
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.02895650000000018,
+        "exit": 176
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-16",
+      "code": "sh.603421",
+      "name": "鼎信通讯",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.027986700000000003,
+        "exit": 176
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.0316553,
+        "exit": 176
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.0371582,
+        "exit": 176
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-17",
+      "code": "sz.000823",
+      "name": "超声电子",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.0257142,
+        "exit": 177
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.021748600000000003,
+        "exit": 177
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.0158002,
+        "exit": 177
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-09-17",
+      "code": "sz.000993",
+      "name": "闽东电力",
+      "trade_10": {
+        "status": "delayed",
+        "net": -0.018265000000000184,
+        "exit": 178
+      },
+      "trade_30": {
+        "status": "delayed",
+        "net": -0.02189500000000018,
+        "exit": 178
+      },
+      "trade_60": {
+        "status": "delayed",
+        "net": -0.02734000000000018,
+        "exit": 178
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-09-22",
+      "code": "sh.603248",
+      "name": "锡华科技",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.024030800000000182,
+        "exit": 180
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.027608400000000182,
+        "exit": 180
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.03297480000000018,
+        "exit": 180
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-22",
+      "code": "sz.003026",
+      "name": "中晶科技",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.043330099999999996,
+        "exit": 180
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.0461145,
+        "exit": 180
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.0502911,
+        "exit": 180
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-23",
+      "code": "sh.601579",
+      "name": "会稽山",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.002482600000000182,
+        "exit": 181
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.005494600000000182,
+        "exit": 181
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.01001260000000018,
+        "exit": 181
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-09-23",
+      "code": "sz.002631",
+      "name": "德尔未来",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.023188849999999636,
+        "exit": 181
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.01934164999999964,
+        "exit": 181
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.013570849999999638,
+        "exit": 181
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-24",
+      "code": "sh.603001",
+      "name": "奥康国际",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.02968440000000018,
+        "exit": 182
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.033350000000000185,
+        "exit": 182
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.03884840000000018,
+        "exit": 182
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-09-28",
+      "code": "sz.001216",
+      "name": "华瓷股份",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.12277,
+        "exit": 183
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.12565,
+        "exit": 183
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.12997,
+        "exit": 183
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-10-08",
+      "code": "sh.600802",
+      "name": "福建水泥",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.0160556,
+        "exit": 186
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.019989600000000003,
+        "exit": 186
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.0258906,
+        "exit": 186
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-08",
+      "code": "sz.000678",
+      "name": "襄阳轴承",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.09606079999999982,
+        "exit": 186
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.09971519999999981,
+        "exit": 186
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.10519679999999983,
+        "exit": 186
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-12",
+      "code": "sh.605388",
+      "name": "均瑶健康",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.008506999999999636,
+        "exit": 188
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.0045229999999996376,
+        "exit": 188
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.0014530000000003624,
+        "exit": 188
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-12",
+      "code": "sz.000011",
+      "name": "深物业A",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.10407280000000001,
+        "exit": 188
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.10774959999999999,
+        "exit": 188
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.11326479999999998,
+        "exit": 188
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-15",
+      "code": "sz.002242",
+      "name": "九阳股份",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.20058650000000056,
+        "exit": 191
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.19680650000000055,
+        "exit": 191
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.19113650000000054,
+        "exit": 191
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-10-16",
+      "code": "sh.605287",
+      "name": "德才股份",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.03355179999999982,
+        "exit": 192
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.02996939999999982,
+        "exit": 192
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.024595799999999817,
+        "exit": 192
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-10-21",
+      "code": "sz.002889",
+      "name": "东方嘉盛",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.00893835,
+        "exit": 195
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.01268195,
+        "exit": 195
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.01829735,
+        "exit": 195
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-21",
+      "code": "sz.003029",
+      "name": "吉大正元",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.2156612499999999,
+        "exit": 195
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.21840444999999992,
+        "exit": 195
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.22251924999999992,
+        "exit": 195
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-29",
+      "code": "sh.600838",
+      "name": "上海九百",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.07037070000000017,
+        "exit": 201
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.07387070000000018,
+        "exit": 201
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.07912070000000018,
+        "exit": 201
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-29",
+      "code": "sh.605488",
+      "name": "福莱新材",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.12595580000000017,
+        "exit": 201
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.12945420000000019,
+        "exit": 201
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.13470180000000018,
+        "exit": 201
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-29",
+      "code": "sz.003021",
+      "name": "兆威机电",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.07638520000000036,
+        "exit": 201
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.07991080000000036,
+        "exit": 201
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.08519920000000036,
+        "exit": 201
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-10-30",
+      "code": "sz.000678",
+      "name": "襄阳轴承",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.0631415,
+        "exit": 202
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.059394499999999996,
+        "exit": 202
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.053774,
+        "exit": 202
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-11-04",
+      "code": "sz.002086",
+      "name": "东方海洋",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.33203600000000033,
+        "exit": 205
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.3274280000000004,
+        "exit": 205
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.32051600000000036,
+        "exit": 205
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-11-05",
+      "code": "sz.002029",
+      "name": "七 匹 狼",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.1053963999999998,
+        "exit": 206
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.10143419999999981,
+        "exit": 206
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.09549089999999982,
+        "exit": 206
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-11-05",
+      "code": "sz.002172",
+      "name": "澳洋健康",
+      "trade_10": {
+        "status": "sold",
+        "net": 0.06272704999999999,
+        "exit": 206
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": 0.058636850000000004,
+        "exit": 206
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": 0.052501549999999994,
+        "exit": 206
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-11-10",
+      "code": "sh.600371",
+      "name": "万向德农",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.07802765,
+        "exit": 209
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.08146185,
+        "exit": 209
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.08661315,
+        "exit": 209
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-10",
+      "code": "sz.002811",
+      "name": "郑中设计",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.14774079999999973,
+        "exit": 209
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.15090399999999973,
+        "exit": 209
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.1556487999999997,
+        "exit": 209
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-11",
+      "code": "sh.603381",
+      "name": "永臻股份",
+      "trade_10": {
+        "status": "delayed",
+        "net": -0.19958779999999993,
+        "exit": 211
+      },
+      "trade_30": {
+        "status": "delayed",
+        "net": -0.20252699999999993,
+        "exit": 211
+      },
+      "trade_60": {
+        "status": "delayed",
+        "net": -0.20693579999999992,
+        "exit": 211
+      },
+      "repair": true
+    },
+    {
+      "date": "2026-11-11",
+      "code": "sz.002088",
+      "name": "鲁阳节能",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.22448215,
+        "exit": 210
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.22790214999999997,
+        "exit": 210
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.23303215,
+        "exit": 210
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-11",
+      "code": "sz.002889",
+      "name": "东方嘉盛",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.10157740000000018,
+        "exit": 210
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.10510060000000017,
+        "exit": 210
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.11038540000000019,
+        "exit": 210
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-12",
+      "code": "sh.601599",
+      "name": "浙文影业",
+      "trade_10": {
+        "status": "delayed",
+        "net": -0.3297370500000001,
+        "exit": 213
+      },
+      "trade_30": {
+        "status": "delayed",
+        "net": -0.3329670500000001,
+        "exit": 213
+      },
+      "trade_60": {
+        "status": "delayed",
+        "net": -0.3378120500000001,
+        "exit": 213
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-18",
+      "code": "sh.600936",
+      "name": "北投科技",
+      "trade_10": {
+        "status": "sold",
+        "net": -0.1184452,
+        "exit": 215
+      },
+      "trade_30": {
+        "status": "sold",
+        "net": -0.1220836,
+        "exit": 215
+      },
+      "trade_60": {
+        "status": "sold",
+        "net": -0.1275412,
+        "exit": 215
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-19",
+      "code": "sz.002748",
+      "name": "世龙实业",
+      "trade_10": {
+        "status": "open",
+        "net": null
+      },
+      "trade_30": {
+        "status": "open",
+        "net": null
+      },
+      "trade_60": {
+        "status": "open",
+        "net": null
+      },
+      "repair": false
+    },
+    {
+      "date": "2026-11-20",
+      "code": "sz.002685",
+      "name": "华东重机",
+      "trade_10": {
+        "status": "open",
+        "net": null
+      },
+      "trade_30": {
+        "status": "open",
+        "net": null
+      },
+      "trade_60": {
+        "status": "open",
+        "net": null
+      },
+      "repair": null
+    }
+  ],
+  "cohort_follow_10": {
+    "status": {
+      "sold": 156,
+      "delayed": 10,
+      "entry_block": 22,
+      "cash_or_liquidity": 2
+    },
+    "signals": 190,
+    "resolved": 190,
+    "net": -0.05401097372251343,
+    "fills": 166,
+    "positive": 0.21578947368421053
+  },
+  "cohort_follow_costs": {
+    "10": {
+      "status": {
+        "sold": 156,
+        "delayed": 10,
+        "entry_block": 22,
+        "cash_or_liquidity": 2
+      },
+      "signals": 190,
+      "resolved": 190,
+      "net": -0.05401097372251343,
+      "fills": 166,
+      "positive": 0.21578947368421053
+    },
+    "30": {
+      "status": {
+        "sold": 156,
+        "delayed": 10,
+        "entry_block": 22,
+        "cash_or_liquidity": 2
+      },
+      "signals": 190,
+      "resolved": 190,
+      "net": -0.05701462647525015,
+      "fills": 166,
+      "positive": 0.21578947368421053
+    },
+    "60": {
+      "status": {
+        "sold": 156,
+        "delayed": 10,
+        "entry_block": 22,
+        "cash_or_liquidity": 2
+      },
+      "signals": 190,
+      "resolved": 190,
+      "net": -0.06152067955172364,
+      "fills": 166,
+      "positive": 0.20526315789473684
+    }
+  },
+  "pullback_costs": {
+    "10": {
+      "status": {
+        "cash_or_liquidity": 4,
+        "sold": 75,
+        "delayed": 3,
+        "open": 2
+      },
+      "signals": 84,
+      "resolved": 82,
+      "net": -0.036880135975609775,
+      "fills": 80,
+      "positive": 0.2804878048780488
+    },
+    "30": {
+      "status": {
+        "cash_or_liquidity": 4,
+        "sold": 75,
+        "delayed": 3,
+        "open": 2
+      },
+      "signals": 84,
+      "resolved": 82,
+      "net": -0.04023554817073173,
+      "fills": 80,
+      "positive": 0.2804878048780488
+    },
+    "60": {
+      "status": {
+        "cash_or_liquidity": 4,
+        "sold": 75,
+        "delayed": 3,
+        "open": 2
+      },
+      "signals": 84,
+      "resolved": 82,
+      "net": -0.04527755060975613,
+      "fills": 80,
+      "positive": 0.25609756097560976
+    }
+  },
+  "repair": {
+    "observed": 83,
+    "repaired": 23
+  },
+  "daily": [
+    {
+      "date": "2026-07-01",
+      "height": 3,
+      "n": 3034,
+      "breadth": 0.8088332234673699,
+      "premium": 0.025937103559629724,
+      "boards": 133.0,
+      "promotions": 22.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-02",
+      "height": 4,
+      "n": 3038,
+      "breadth": 0.45457537853851215,
+      "premium": 0.001436494787443121,
+      "boards": 86.0,
+      "promotions": 18.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-03",
+      "height": 5,
+      "n": 3038,
+      "breadth": 0.7027649769585254,
+      "premium": -0.001729419749664889,
+      "boards": 94.0,
+      "promotions": 17.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-06",
+      "height": 4,
+      "n": 3039,
+      "breadth": 0.4169134583744653,
+      "premium": -0.009141099546726632,
+      "boards": 61.0,
+      "promotions": 7.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-07-07",
+      "height": 5,
+      "n": 3037,
+      "breadth": 0.11030622324662497,
+      "premium": -0.0179408543881474,
+      "boards": 30.0,
+      "promotions": 5.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-07-08",
+      "height": 6,
+      "n": 3038,
+      "breadth": 0.31138907175773534,
+      "premium": 0.011680892027924957,
+      "boards": 41.0,
+      "promotions": 7.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-09",
+      "height": 7,
+      "n": 3038,
+      "breadth": 0.3778801843317972,
+      "premium": 0.013210133877225168,
+      "boards": 64.0,
+      "promotions": 6.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-10",
+      "height": 2,
+      "n": 3037,
+      "breadth": 0.7174843595653606,
+      "premium": 0.003911209129103459,
+      "boards": 83.0,
+      "promotions": 10.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-13",
+      "height": 3,
+      "n": 3039,
+      "breadth": 0.18821980914774597,
+      "premium": -0.02597119879692021,
+      "boards": 26.0,
+      "promotions": 10.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-07-14",
+      "height": 3,
+      "n": 3039,
+      "breadth": 0.7897334649555775,
+      "premium": 0.018691600890689716,
+      "boards": 71.0,
+      "promotions": 5.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-15",
+      "height": 4,
+      "n": 3039,
+      "breadth": 0.6818032247449819,
+      "premium": 0.01627621574531587,
+      "boards": 65.0,
+      "promotions": 14.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-16",
+      "height": 5,
+      "n": 3039,
+      "breadth": 0.4695623560381704,
+      "premium": 0.01608038190055738,
+      "boards": 37.0,
+      "promotions": 9.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-17",
+      "height": 4,
+      "n": 3039,
+      "breadth": 0.1016781836130306,
+      "premium": -0.010305711606709794,
+      "boards": 30.0,
+      "promotions": 7.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-07-20",
+      "height": 3,
+      "n": 3041,
+      "breadth": 0.40381453469253537,
+      "premium": 0.007714875018999042,
+      "boards": 49.0,
+      "promotions": 8.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-21",
+      "height": 4,
+      "n": 3041,
+      "breadth": 0.47287076619533047,
+      "premium": 0.008604036299851694,
+      "boards": 82.0,
+      "promotions": 5.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-22",
+      "height": 5,
+      "n": 3041,
+      "breadth": 0.327195001644196,
+      "premium": 0.019307892125768354,
+      "boards": 41.0,
+      "promotions": 11.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-23",
+      "height": 6,
+      "n": 3041,
+      "breadth": 0.8283459388359092,
+      "premium": 0.04331498781998518,
+      "boards": 104.0,
+      "promotions": 14.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-24",
+      "height": 4,
+      "n": 3042,
+      "breadth": 0.0811965811965812,
+      "premium": -0.00598142903788327,
+      "boards": 36.0,
+      "promotions": 17.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-07-27",
+      "height": 5,
+      "n": 3041,
+      "breadth": 0.9302860901019402,
+      "premium": 0.026480338429781668,
+      "boards": 99.0,
+      "promotions": 7.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-28",
+      "height": 6,
+      "n": 3041,
+      "breadth": 0.5271292338046695,
+      "premium": 0.004121793110206182,
+      "boards": 57.0,
+      "promotions": 16.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-07-29",
+      "height": 7,
+      "n": 3041,
+      "breadth": 0.8286747780335416,
+      "premium": 0.007105225515208874,
+      "boards": 73.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-07-30",
+      "height": 8,
+      "n": 3044,
+      "breadth": 0.402431011826544,
+      "premium": -0.004103890414664477,
+      "boards": 46.0,
+      "promotions": 10.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-07-31",
+      "height": 9,
+      "n": 3043,
+      "breadth": 0.7857377587906671,
+      "premium": 0.027375903022398496,
+      "boards": 87.0,
+      "promotions": 9.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-03",
+      "height": 6,
+      "n": 3042,
+      "breadth": 0.7879684418145957,
+      "premium": 0.015560773900360765,
+      "boards": 69.0,
+      "promotions": 17.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-04",
+      "height": 7,
+      "n": 3042,
+      "breadth": 0.5292570677186061,
+      "premium": 0.04625634954926526,
+      "boards": 123.0,
+      "promotions": 19.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-05",
+      "height": 8,
+      "n": 3043,
+      "breadth": 0.5869208018402892,
+      "premium": 0.05196955153899494,
+      "boards": 94.0,
+      "promotions": 31.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-06",
+      "height": 5,
+      "n": 3044,
+      "breadth": 0.4671484888304862,
+      "premium": 0.037399983969814754,
+      "boards": 70.0,
+      "promotions": 19.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-07",
+      "height": 4,
+      "n": 3044,
+      "breadth": 0.4244415243101183,
+      "premium": 0.007232363179797292,
+      "boards": 59.0,
+      "promotions": 13.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-10",
+      "height": 5,
+      "n": 3044,
+      "breadth": 0.8101182654402103,
+      "premium": 0.015859062433421004,
+      "boards": 94.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-11",
+      "height": 6,
+      "n": 3042,
+      "breadth": 0.269888231426693,
+      "premium": 0.005484539094282656,
+      "boards": 53.0,
+      "promotions": 15.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-12",
+      "height": 7,
+      "n": 3042,
+      "breadth": 0.7287968441814595,
+      "premium": 0.0315681273599333,
+      "boards": 86.0,
+      "promotions": 16.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-13",
+      "height": 5,
+      "n": 3042,
+      "breadth": 0.19362261669953978,
+      "premium": 0.006817767240184577,
+      "boards": 50.0,
+      "promotions": 20.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-14",
+      "height": 3,
+      "n": 3042,
+      "breadth": 0.36554898093359633,
+      "premium": -0.008882479179759342,
+      "boards": 51.0,
+      "promotions": 9.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-08-17",
+      "height": 4,
+      "n": 3040,
+      "breadth": 0.7720394736842106,
+      "premium": 0.029564733534006557,
+      "boards": 92.0,
+      "promotions": 14.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-18",
+      "height": 4,
+      "n": 3040,
+      "breadth": 0.3832236842105263,
+      "premium": 0.0025769093485930243,
+      "boards": 70.0,
+      "promotions": 15.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-19",
+      "height": 3,
+      "n": 3040,
+      "breadth": 0.10888157894736843,
+      "premium": -0.03450019466619531,
+      "boards": 32.0,
+      "promotions": 7.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-08-20",
+      "height": 4,
+      "n": 3039,
+      "breadth": 0.730174399473511,
+      "premium": -0.010149883534132566,
+      "boards": 59.0,
+      "promotions": 4.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-21",
+      "height": 3,
+      "n": 3039,
+      "breadth": 0.42941757156959526,
+      "premium": -0.008566831681619869,
+      "boards": 47.0,
+      "promotions": 9.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-08-24",
+      "height": 4,
+      "n": 3042,
+      "breadth": 0.32511505588428663,
+      "premium": 0.0044576694966899305,
+      "boards": 44.0,
+      "promotions": 10.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-08-25",
+      "height": 5,
+      "n": 3043,
+      "breadth": 0.7801511666118962,
+      "premium": 0.008204468965743917,
+      "boards": 61.0,
+      "promotions": 8.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-26",
+      "height": 5,
+      "n": 3044,
+      "breadth": 0.6084099868593955,
+      "premium": 0.024613922130452562,
+      "boards": 49.0,
+      "promotions": 13.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-27",
+      "height": 6,
+      "n": 3045,
+      "breadth": 0.5655172413793104,
+      "premium": 0.0320315183693672,
+      "boards": 67.0,
+      "promotions": 16.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-28",
+      "height": 7,
+      "n": 3044,
+      "breadth": 0.6231931668856767,
+      "premium": 0.026510898838002787,
+      "boards": 78.0,
+      "promotions": 17.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-08-31",
+      "height": 6,
+      "n": 3045,
+      "breadth": 0.5126436781609195,
+      "premium": 0.007870227663430793,
+      "boards": 79.0,
+      "promotions": 18.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-01",
+      "height": 7,
+      "n": 3046,
+      "breadth": 0.6723571897570584,
+      "premium": 0.012019882869133977,
+      "boards": 76.0,
+      "promotions": 17.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-09-02",
+      "height": 5,
+      "n": 3047,
+      "breadth": 0.2271086314407614,
+      "premium": -0.006679547525110913,
+      "boards": 50.0,
+      "promotions": 14.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-09-03",
+      "height": 5,
+      "n": 3048,
+      "breadth": 0.3526902887139108,
+      "premium": 0.0018748390975389384,
+      "boards": 42.0,
+      "promotions": 9.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-04",
+      "height": 5,
+      "n": 3047,
+      "breadth": 0.48014440433212996,
+      "premium": -0.004117160359263789,
+      "boards": 39.0,
+      "promotions": 7.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-07",
+      "height": 6,
+      "n": 3045,
+      "breadth": 0.5369458128078818,
+      "premium": 0.0474532525001109,
+      "boards": 86.0,
+      "promotions": 13.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-08",
+      "height": 4,
+      "n": 3045,
+      "breadth": 0.7178981937602628,
+      "premium": 0.03169176770455145,
+      "boards": 71.0,
+      "promotions": 19.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-09-09",
+      "height": 5,
+      "n": 3044,
+      "breadth": 0.3764783180026281,
+      "premium": 0.011757209520588776,
+      "boards": 48.0,
+      "promotions": 15.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-10",
+      "height": 4,
+      "n": 3043,
+      "breadth": 0.19158724942490962,
+      "premium": -0.0010446808253113092,
+      "boards": 34.0,
+      "promotions": 9.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-09-11",
+      "height": 4,
+      "n": 3044,
+      "breadth": 0.11629434954007885,
+      "premium": 0.00031714875464094035,
+      "boards": 39.0,
+      "promotions": 7.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-14",
+      "height": 4,
+      "n": 3043,
+      "breadth": 0.5231679263884325,
+      "premium": 0.032330752246996636,
+      "boards": 47.0,
+      "promotions": 11.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-15",
+      "height": 5,
+      "n": 3040,
+      "breadth": 0.17269736842105263,
+      "premium": 0.0010074039573925912,
+      "boards": 31.0,
+      "promotions": 6.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-16",
+      "height": 6,
+      "n": 3040,
+      "breadth": 0.6746710526315789,
+      "premium": 0.03127080862277618,
+      "boards": 80.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-09-17",
+      "height": 5,
+      "n": 3041,
+      "breadth": 0.4672804998355804,
+      "premium": -0.00015085729455686925,
+      "boards": 44.0,
+      "promotions": 9.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-18",
+      "height": 4,
+      "n": 3041,
+      "breadth": 0.7000986517592898,
+      "premium": 0.027268117643366566,
+      "boards": 72.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-09-21",
+      "height": 5,
+      "n": 3043,
+      "breadth": 0.8291160039434768,
+      "premium": 0.03556082673775413,
+      "boards": 93.0,
+      "promotions": 21.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-09-22",
+      "height": 6,
+      "n": 3042,
+      "breadth": 0.3800131492439185,
+      "premium": 0.02046447051663253,
+      "boards": 59.0,
+      "promotions": 23.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-23",
+      "height": 4,
+      "n": 3043,
+      "breadth": 0.2599408478475189,
+      "premium": 0.0025362022753463143,
+      "boards": 44.0,
+      "promotions": 12.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-24",
+      "height": 5,
+      "n": 3043,
+      "breadth": 0.23529411764705882,
+      "premium": 0.008901802083584464,
+      "boards": 47.0,
+      "promotions": 13.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-09-28",
+      "height": 5,
+      "n": 3039,
+      "breadth": 0.20204014478446858,
+      "premium": -0.021959337515245456,
+      "boards": 31.0,
+      "promotions": 7.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-09-29",
+      "height": 6,
+      "n": 3039,
+      "breadth": 0.6015136558078316,
+      "premium": 0.019320387012107317,
+      "boards": 51.0,
+      "promotions": 9.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-09-30",
+      "height": 7,
+      "n": 3038,
+      "breadth": 0.5394996708360764,
+      "premium": 0.006614580236209557,
+      "boards": 48.0,
+      "promotions": 11.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-08",
+      "height": 8,
+      "n": 3039,
+      "breadth": 0.38631128660743663,
+      "premium": 0.0028327985982653657,
+      "boards": 38.0,
+      "promotions": 10.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-09",
+      "height": 9,
+      "n": 3042,
+      "breadth": 0.6429980276134122,
+      "premium": 0.024299812495738888,
+      "boards": 62.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-10-12",
+      "height": 10,
+      "n": 3040,
+      "breadth": 0.23355263157894737,
+      "premium": 0.017558345623758572,
+      "boards": 39.0,
+      "promotions": 18.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-13",
+      "height": 3,
+      "n": 3042,
+      "breadth": 0.539447731755424,
+      "premium": 0.010190382124710086,
+      "boards": 63.0,
+      "promotions": 10.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-14",
+      "height": 4,
+      "n": 3044,
+      "breadth": 0.221419185282523,
+      "premium": -0.002320445172903933,
+      "boards": 34.0,
+      "promotions": 13.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-10-15",
+      "height": 5,
+      "n": 3043,
+      "breadth": 0.08314163654288531,
+      "premium": -0.0212710151938168,
+      "boards": 34.0,
+      "promotions": 6.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-10-16",
+      "height": 4,
+      "n": 3038,
+      "breadth": 0.631336405529954,
+      "premium": -0.01728165254999235,
+      "boards": 55.0,
+      "promotions": 6.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-19",
+      "height": 3,
+      "n": 3040,
+      "breadth": 0.4506578947368421,
+      "premium": 0.003818057518804657,
+      "boards": 40.0,
+      "promotions": 11.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-20",
+      "height": 4,
+      "n": 3046,
+      "breadth": 0.5397242284963887,
+      "premium": 0.029487038650339182,
+      "boards": 46.0,
+      "promotions": 13.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-21",
+      "height": 4,
+      "n": 3041,
+      "breadth": 0.37487668530088786,
+      "premium": 0.03295930254911372,
+      "boards": 44.0,
+      "promotions": 16.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-22",
+      "height": 5,
+      "n": 3042,
+      "breadth": 0.09237343852728468,
+      "premium": -0.016703869551485336,
+      "boards": 29.0,
+      "promotions": 9.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-10-23",
+      "height": 6,
+      "n": 3037,
+      "breadth": 0.7645702996378004,
+      "premium": 0.03176300123845273,
+      "boards": 63.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-10-26",
+      "height": 4,
+      "n": 3044,
+      "breadth": 0.461892247043364,
+      "premium": 0.023853619163938532,
+      "boards": 47.0,
+      "promotions": 14.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-27",
+      "height": 5,
+      "n": 3044,
+      "breadth": 0.13699080157687255,
+      "premium": 0.01001602012871881,
+      "boards": 38.0,
+      "promotions": 12.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-10-28",
+      "height": 5,
+      "n": 3046,
+      "breadth": 0.6690741956664478,
+      "premium": 0.018431149990506646,
+      "boards": 59.0,
+      "promotions": 8.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-10-29",
+      "height": 4,
+      "n": 3047,
+      "breadth": 0.18411552346570398,
+      "premium": -0.0011344954435829734,
+      "boards": 38.0,
+      "promotions": 10.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-10-30",
+      "height": 5,
+      "n": 3046,
+      "breadth": 0.19665134602757714,
+      "premium": -0.00908909920968293,
+      "boards": 42.0,
+      "promotions": 9.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-02",
+      "height": 6,
+      "n": 3047,
+      "breadth": 0.8293403347554972,
+      "premium": 0.03395171364240478,
+      "boards": 110.0,
+      "promotions": 11.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-11-03",
+      "height": 4,
+      "n": 3043,
+      "breadth": 0.4965494577719356,
+      "premium": 0.011921973187514865,
+      "boards": 47.0,
+      "promotions": 15.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-11-04",
+      "height": 3,
+      "n": 3047,
+      "breadth": 0.7600918936659009,
+      "premium": -0.005917068363377802,
+      "boards": 97.0,
+      "promotions": 12.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-11-05",
+      "height": 4,
+      "n": 3047,
+      "breadth": 0.8460781096160157,
+      "premium": 0.04100134740130118,
+      "boards": 71.0,
+      "promotions": 20.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-11-06",
+      "height": 5,
+      "n": 3042,
+      "breadth": 0.16074950690335305,
+      "premium": -0.003512065617187346,
+      "boards": 29.0,
+      "promotions": 10.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-09",
+      "height": 6,
+      "n": 3047,
+      "breadth": 0.3767640301936331,
+      "premium": 0.04462019150579038,
+      "boards": 51.0,
+      "promotions": 10.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-11-10",
+      "height": 7,
+      "n": 3045,
+      "breadth": 0.6991789819376026,
+      "premium": 0.05278650157803091,
+      "boards": 84.0,
+      "promotions": 19.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-11-11",
+      "height": 4,
+      "n": 3047,
+      "breadth": 0.592057761732852,
+      "premium": 0.029355900651508386,
+      "boards": 76.0,
+      "promotions": 19.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-11-12",
+      "height": 5,
+      "n": 3048,
+      "breadth": 0.1696194225721785,
+      "premium": -0.00492177981634123,
+      "boards": 37.0,
+      "promotions": 11.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-13",
+      "height": 4,
+      "n": 3046,
+      "breadth": 0.17038739330269206,
+      "premium": -0.015351215744697683,
+      "boards": 35.0,
+      "promotions": 7.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-16",
+      "height": 4,
+      "n": 3047,
+      "breadth": 0.2924187725631769,
+      "premium": 0.013655581364520657,
+      "boards": 30.0,
+      "promotions": 11.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-11-17",
+      "height": 3,
+      "n": 3047,
+      "breadth": 0.2651788644568428,
+      "premium": -0.001801227983753432,
+      "boards": 33.0,
+      "promotions": 6.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-18",
+      "height": 4,
+      "n": 3047,
+      "breadth": 0.2527075812274368,
+      "premium": 0.00553116644872594,
+      "boards": 34.0,
+      "promotions": 7.0,
+      "regime": "mixed"
+    },
+    {
+      "date": "2026-11-19",
+      "height": 3,
+      "n": 3048,
+      "breadth": 0.13353018372703412,
+      "premium": -0.0039972741922404504,
+      "boards": 23.0,
+      "promotions": 5.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-20",
+      "height": 4,
+      "n": 3044,
+      "breadth": 0.0657030223390276,
+      "premium": -0.03509891579721068,
+      "boards": 25.0,
+      "promotions": 3.0,
+      "regime": "weak"
+    },
+    {
+      "date": "2026-11-23",
+      "height": 5,
+      "n": 3046,
+      "breadth": 0.7652659225213395,
+      "premium": 0.07721754579110497,
+      "boards": 116.0,
+      "promotions": 15.0,
+      "regime": "strong"
+    },
+    {
+      "date": "2026-11-24",
+      "height": 4,
+      "n": 3049,
+      "breadth": 0.2915710068875041,
+      "premium": 0.03660592217439417,
+      "boards": 45.0,
+      "promotions": 25.0,
+      "regime": "mixed"
+    }
+  ],
+  "ambiguous_onset_days": [],
+  "extension_audit": {
+    "codes": 3195,
+    "rows": 118011,
+    "overlap_rows": 49564,
+    "OHLC_agree": 1.0,
+    "reference_agree": 0.9998384197451071,
+    "median_amount_ratio": 1.0,
+    "amount_within_1pct": 1.0,
+    "inferred_ref_changes": 153,
+    "untrusted_rows": 0,
+    "source_rows_before_overlap": {
+      "ths": 80885,
+      "sohu": 26175,
+      "qq-range": 11358
+    },
+    "target_known": 3196,
+    "known_source_responses": 3196,
+    "known_no_response": [],
+    "known_no_extension_trade": [
+      "sh.601059",
+      "sh.601198",
+      "sz.000016"
+    ],
+    "status_changed_or_inconsistent_directory": [
+      "sh.600363",
+      "sh.603517",
+      "sh.603838",
+      "sz.000972",
+      "sz.002731"
+    ],
+    "crosschecks": [
+      407,
+      407,
+      407
+    ],
+    "overlap_reference_observed": 49511,
+    "reference_types": {
+      "prior_raw_close": 91565,
+      "quoted_change": 26234,
+      "unique_adjusted_tick": 112,
+      "uncertain": 98,
+      "no_previous_quote": 2
+    },
+    "unknown_reference_rows": [
+      [
+        "sh.600026",
+        "2026-10-22"
+      ],
+      [
+        "sh.600028",
+        "2026-09-30"
+      ],
+      [
+        "sh.600105",
+        "2026-10-14"
+      ],
+      [
+        "sh.600188",
+        "2026-09-29"
+      ],
+      [
+        "sh.600219",
+        "2026-10-15"
+      ],
+      [
+        "sh.600315",
+        "2026-10-16"
+      ],
+      [
+        "sh.600360",
+        "2026-10-27"
+      ],
+      [
+        "sh.600390",
+        "2026-10-15"
+      ],
+      [
+        "sh.600459",
+        "2026-11-06"
+      ],
+      [
+        "sh.600477",
+        "2026-10-22"
+      ],
+      [
+        "sh.600516",
+        "2026-11-06"
+      ],
+      [
+        "sh.600621",
+        "2026-09-29"
+      ],
+      [
+        "sh.600667",
+        "2026-10-19"
+      ],
+      [
+        "sh.600686",
+        "2026-10-23"
+      ],
+      [
+        "sh.600720",
+        "2026-10-21"
+      ],
+      [
+        "sh.600895",
+        "2026-10-16"
+      ],
+      [
+        "sh.600906",
+        "2026-10-20"
+      ],
+      [
+        "sh.600927",
+        "2026-10-16"
+      ],
+      [
+        "sh.600941",
+        "2026-09-30"
+      ],
+      [
+        "sh.601006",
+        "2026-10-19"
+      ],
+      [
+        "sh.601026",
+        "2026-09-29"
+      ],
+      [
+        "sh.601069",
+        "2026-09-30"
+      ],
+      [
+        "sh.601088",
+        "2026-10-26"
+      ],
+      [
+        "sh.601211",
+        "2026-10-16"
+      ],
+      [
+        "sh.601222",
+        "2026-10-22"
+      ],
+      [
+        "sh.601228",
+        "2026-11-18"
+      ],
+      [
+        "sh.601288",
+        "2026-10-21"
+      ],
+      [
+        "sh.601319",
+        "2026-11-06"
+      ],
+      [
+        "sh.601398",
+        "2026-10-21"
+      ],
+      [
+        "sh.601577",
+        "2026-09-30"
+      ],
+      [
+        "sh.601598",
+        "2026-10-20"
+      ],
+      [
+        "sh.601600",
+        "2026-10-23"
+      ],
+      [
+        "sh.601601",
+        "2026-10-23"
+      ],
+      [
+        "sh.601628",
+        "2026-10-19"
+      ],
+      [
+        "sh.601696",
+        "2026-11-06"
+      ],
+      [
+        "sh.601811",
+        "2026-11-10"
+      ],
+      [
+        "sh.601866",
+        "2026-10-26"
+      ],
+      [
+        "sh.601869",
+        "2026-11-10"
+      ],
+      [
+        "sh.601878",
+        "2026-10-30"
+      ],
+      [
+        "sh.601881",
+        "2026-11-16"
+      ],
+      [
+        "sh.601901",
+        "2026-10-23"
+      ],
+      [
+        "sh.601928",
+        "2026-10-23"
+      ],
+      [
+        "sh.601966",
+        "2026-10-22"
+      ],
+      [
+        "sh.601969",
+        "2026-10-16"
+      ],
+      [
+        "sh.601985",
+        "2026-10-23"
+      ],
+      [
+        "sh.601991",
+        "2026-10-28"
+      ],
+      [
+        "sh.601998",
+        "2026-11-20"
+      ],
+      [
+        "sh.603112",
+        "2026-11-09"
+      ],
+      [
+        "sh.603120",
+        "2026-10-13"
+      ],
+      [
+        "sh.603167",
+        "2026-11-20"
+      ],
+      [
+        "sh.603202",
+        "2026-10-16"
+      ],
+      [
+        "sh.603277",
+        "2026-10-19"
+      ],
+      [
+        "sh.603312",
+        "2026-10-12"
+      ],
+      [
+        "sh.603365",
+        "2026-10-15"
+      ],
+      [
+        "sh.603390",
+        "2026-09-28"
+      ],
+      [
+        "sh.603511",
+        "2026-11-05"
+      ],
+      [
+        "sh.603599",
+        "2026-10-23"
+      ],
+      [
+        "sh.605011",
+        "2026-09-28"
+      ],
+      [
+        "sh.605033",
+        "2026-11-10"
+      ],
+      [
+        "sh.605098",
+        "2026-11-17"
+      ],
+      [
+        "sh.605179",
+        "2026-11-03"
+      ],
+      [
+        "sh.605183",
+        "2026-09-30"
+      ],
+      [
+        "sh.605338",
+        "2026-11-11"
+      ],
+      [
+        "sz.000338",
+        "2026-10-23"
+      ],
+      [
+        "sz.000400",
+        "2026-09-28"
+      ],
+      [
+        "sz.000407",
+        "2026-10-13"
+      ],
+      [
+        "sz.000425",
+        "2026-10-21"
+      ],
+      [
+        "sz.000498",
+        "2026-10-22"
+      ],
+      [
+        "sz.000650",
+        "2026-11-13"
+      ],
+      [
+        "sz.000739",
+        "2026-10-08"
+      ],
+      [
+        "sz.000777",
+        "2026-11-10"
+      ],
+      [
+        "sz.000795",
+        "2026-10-12"
+      ],
+      [
+        "sz.000815",
+        "2026-11-06"
+      ],
+      [
+        "sz.000880",
+        "2026-10-23"
+      ],
+      [
+        "sz.000962",
+        "2026-11-20"
+      ],
+      [
+        "sz.001232",
+        "2026-09-28"
+      ],
+      [
+        "sz.001246",
+        "2026-09-30"
+      ],
+      [
+        "sz.001376",
+        "2026-11-04"
+      ],
+      [
+        "sz.001379",
+        "2026-11-06"
+      ],
+      [
+        "sz.001381",
+        "2026-11-03"
+      ],
+      [
+        "sz.001382",
+        "2026-09-29"
+      ],
+      [
+        "sz.001399",
+        "2026-10-27"
+      ],
+      [
+        "sz.002051",
+        "2026-10-14"
+      ],
+      [
+        "sz.002090",
+        "2026-10-16"
+      ],
+      [
+        "sz.002131",
+        "2026-10-16"
+      ],
+      [
+        "sz.002275",
+        "2026-11-11"
+      ],
+      [
+        "sz.002340",
+        "2026-10-19"
+      ],
+      [
+        "sz.002422",
+        "2026-10-21"
+      ],
+      [
+        "sz.002500",
+        "2026-10-22"
+      ],
+      [
+        "sh.600150",
+        "2026-10-23"
+      ],
+      [
+        "sh.603017",
+        "2026-10-12"
+      ],
+      [
+        "sh.603629",
+        "2026-10-23"
+      ],
+      [
+        "sh.605300",
+        "2026-11-03"
+      ],
+      [
+        "sz.000623",
+        "2026-10-23"
+      ],
+      [
+        "sz.002733",
+        "2026-09-30"
+      ],
+      [
+        "sz.002802",
+        "2026-10-16"
+      ],
+      [
+        "sz.002803",
+        "2026-10-19"
+      ],
+      [
+        "sz.002960",
+        "2026-10-21"
+      ],
+      [
+        "sz.002969",
+        "2026-11-20"
+      ],
+      [
+        "sz.003027",
+        "2026-10-08"
+      ]
+    ],
+    "qq_overlap_check": [
+      5261,
+      1.0,
+      1.0,
+      1.0,
+      5250
+    ]
+  }
+}

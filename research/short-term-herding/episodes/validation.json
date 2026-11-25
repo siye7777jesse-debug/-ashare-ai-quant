@@ -1,0 +1,30 @@
+{
+  "prefix_rows": 34532,
+  "sensitivity_same_episode_identities": true,
+  "sensitivity_cohort_follow_10": {
+    "status": {
+      "sold": 156,
+      "delayed": 10,
+      "entry_block": 22,
+      "cash_or_liquidity": 2
+    },
+    "signals": 190,
+    "resolved": 190,
+    "net": -0.05401097372251343,
+    "fills": 166,
+    "positive": 0.21578947368421053
+  },
+  "sensitivity_pullback_10": {
+    "status": {
+      "cash_or_liquidity": 4,
+      "sold": 75,
+      "delayed": 3,
+      "open": 2
+    },
+    "signals": 84,
+    "resolved": 82,
+    "net": -0.036880135975609775,
+    "fills": 80,
+    "positive": 0.2804878048780488
+  }
+}
