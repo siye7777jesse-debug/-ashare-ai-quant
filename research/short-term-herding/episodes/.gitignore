@@ -1,0 +1,15 @@
+__pycache__/
+raw
+extension
+sohu
+qq
+*.duckdb*
+snapshot.tar
+universe.json
+*errors.json
+remaining-status.json
+suspected.json
+sohu-references.json
+extension-calendar.json
+archive-results.json
+*.log
